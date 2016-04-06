@@ -12,6 +12,13 @@ You may want to improve the loop, here are the options:
 
 * [WP Theme Development](https://codex.wordpress.org/Theme_Development)
 
+## Src: video, images, audio etc.
+
+~~~~
+<img src="<?php bloginfo('template_directory'); ?>/images/FILENAME.png" alt="" width="" height="" />
+~~~~
+
+
 ## The wp-bootstrap-navwalker (copy from the repo)
 
 **A custom WordPress nav walker class to fully implement the Bootstrap 3.0+ navigation style in a custom theme using the WordPress built in menu manager.**
