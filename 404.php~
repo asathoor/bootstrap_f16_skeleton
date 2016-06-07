@@ -1,7 +1,0 @@
-<?php
-get_header();
-
-<h1>It is not here</h1>
-
-get_footer(); 
-?>
