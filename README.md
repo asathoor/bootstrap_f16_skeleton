@@ -31,3 +31,8 @@ Have a look at functions.php. Here we define theme options, like:
 ## SEO
 
 No SEO is used. Add meta-tags, see my [SEO II Exercise](https://github.com/asathoor/SEO-II-exercise)
+
+## Test Content
+
+* [WP Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test)
+* [Test Content Download](https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml)

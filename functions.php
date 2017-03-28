@@ -2,9 +2,6 @@
 /**
  * File: functions.php
  * (the file is optional and works like a plugin)
- *
- * This file is optional.
- * However these settings are required in order to pass validation.
  */
 
 /**
@@ -85,13 +82,15 @@ add_action( 'widgets_init', 'petjmvp_widgets_init' );
 
 /**
  * Costum background
+ * .. not implemented ..
  */
+/*
 $args = array(
 	'default-color' => '000000',
 	'default-image' => '%1$s/images/background.jpg',
 );
 add_theme_support( 'custom-background', $args );
-
+*/
 
 /**
  * Add editor styles
@@ -117,6 +116,8 @@ add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
  * Costum logo support
  * @url: https://codex.wordpress.org/Theme_Logo
  */
+
+/*
 function petj_mvp_setup() {
 	
 	add_theme_support( 'custom-logo', array(
@@ -127,11 +128,13 @@ function petj_mvp_setup() {
 
 }
 add_action( 'after_setup_theme', 'petj_mvp_setup' );
+*/
 
 /**
  * Costum header image
  * (load via style.css)
  */
+/*
 $petjHeaderImage = array(
 	'flex-width'    => true,
 	'width'         => 820,
@@ -140,4 +143,5 @@ $petjHeaderImage = array(
 	'default-image' => get_template_directory_uri() . '/images/header.jpg',
 );
 add_theme_support( 'custom-header', $petjHeaderImage );
+*/
 ?>
