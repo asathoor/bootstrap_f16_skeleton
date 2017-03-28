@@ -18,9 +18,14 @@ You may want to improve the loop, here are the options:
 <img src="<?php bloginfo('template_directory'); ?>/images/FILENAME.png" alt="" width="" height="" />
 ~~~~
 
+## Functions
 
-## The wp-bootstrap-navwalker (copy from the repo)
+Have a look at functions.php. Here we define theme options, like:
 
-**A custom WordPress nav walker class to fully implement the Bootstrap 3.0+ navigation style in a custom theme using the WordPress built in menu manager.**
+* Menus
+* Widget areas
+* Additional WordPress functionality
 
-![Extras](http://edwardmcintyre.com/pub/github/navwalker-3-menu.jpg)
+## SEO
+
+No SEO is used. Add meta-tags, see my [SEO II Exercise](https://github.com/asathoor/SEO-II-exercise)
