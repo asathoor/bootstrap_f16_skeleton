@@ -36,3 +36,7 @@ No SEO is used. Add meta-tags, see my [SEO II Exercise](https://github.com/asath
 
 * [WP Theme Unit Test](https://codex.wordpress.org/Theme_Unit_Test)
 * [Test Content Download](https://wpcom-themes.svn.automattic.com/demo/theme-unit-test-data.xml)
+
+## Further Development
+
+For code adding functionality like costum header, logo, or background image, please refer to [petj-mvp](https://github.com/asathoor/petj-mvp).
