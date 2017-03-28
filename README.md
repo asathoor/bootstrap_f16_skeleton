@@ -1,6 +1,6 @@
 # wp petj_f16_bootstrap
 
-Quick'n dirty experimental theme: bootstrap theme with menu using the *wp-bootstrap-navwalker*.
+Quick'n dirty experimental bootstrap theme.
 
 ## The Loop
 
