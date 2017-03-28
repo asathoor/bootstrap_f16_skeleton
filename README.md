@@ -42,7 +42,7 @@ add_action( 'wp_enqueue_scripts', 'petj_enqueue_style' );
 ```
 
 See the WordPress [developer reference](https://developer.wordpress.org/reference/functions/wp_enqueue_style/)
-
+s
 
 ## SEO
 

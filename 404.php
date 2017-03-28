@@ -1,7 +1,5 @@
-<?php
-get_header();
+<?php get_header(); ?>
 
-<h1>404: not found.</h1>
+	<h1>404: not found.</h1>
 
-get_footer(); 
-?>
+<?php get_footer(); ?>
