@@ -28,6 +28,22 @@ Have a look at functions.php. Here we define theme options, like:
 * Widget areas
 * Additional WordPress functionality
 
+
+## Scripts and Stylesheets
+
+In header.php the scripts and some stylesheets are loaded via html for clarity. However the recommended WordPress standard
+is enqueueing via functions.php:
+
+```
+function petj_enqueue_style() {
+	wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css', false );
+}
+add_action( 'wp_enqueue_scripts', 'petj_enqueue_style' );
+```
+
+See the WordPress [developer reference](https://developer.wordpress.org/reference/functions/wp_enqueue_style/)
+
+
 ## SEO
 
 No SEO is used. Add meta-tags, see my [SEO II Exercise](https://github.com/asathoor/SEO-II-exercise)
