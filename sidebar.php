@@ -12,9 +12,19 @@
     <!-- Menu -->  
     <h3> <?php _e('Sidebar Menu','petj_f16_bootstrap'); ?> </h3>
 
-		<nav>
-	    <?php wp_nav_menu( array( 'theme_location' => 'sidebar-menu' ) ); ?>
-		</nav>
+
+	    <?php wp_nav_menu( 
+				array( 
+
+					'theme_location' => 'sidebar-menu',
+					'container' => 'nav',
+					'container_id' => 'navSidebarMenu',
+					'container_class' => 'sidebarMenu',
+					'depth' => 0,
+					'items_wrap' => 'ul'
+
+				) ); ?>
+
 
     <!-- widget areas -->
     <h3> <?php _e('Widget area','petj_f16_bootstrap'); ?> </h3>
