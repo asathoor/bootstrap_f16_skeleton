@@ -1,6 +1,8 @@
-# wp petj_f16_bootstrap
+# WordPress Theme Crash Course
 
-**Quick'n dirty experimental bootstrap theme.**
+This theme is a WordPress theme crash course. It's a skeleton for something, where you can develop your own design. 
+Bootstrap is used as a rapid development boiler plate. Since Bootstrap depends on Jquery, the theme is ready for that too.
+
 
 ## The Loop
 
