@@ -1,9 +1,10 @@
 <?php
 /**
- * Primitive loop
+ * file: index.php
  */
 get_header();
 ?>
+
 <!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
 <div class="jumbotron text-center">
   <h1><?php bloginfo('name'); ?></h1>
@@ -18,9 +19,11 @@ get_header();
       <p>Ut enim ad..</p>
     </div>
     <div class="col-sm-4">
+
 			<!-- loop start -->
-			<?php get_template_part( "loop" ); ?>
+				<?php get_template_part( "loop" ); ?>
 			<!-- loop end -->
+
     </div>
     <div class="col-sm-4">
 			<?php get_sidebar(); ?>

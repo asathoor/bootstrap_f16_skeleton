@@ -2,6 +2,6 @@
 
 	<!-- add your scripts here -->
 
-	<?php wp_footer(); // load this after your scripts ?>
+	<?php wp_footer(); // load WP-related footer scripts ?>
 </body>
 </html>
