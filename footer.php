@@ -7,17 +7,18 @@
 		/* <![CDATA[ */ 
 		( function( $ ) { 
 		  // code goes here 
-		  console.log('Jquery is up and running.'); 
+		  // console.log('Jquery is up and running.'); 
 		  // hide the children 
-		  $('.menu-item-has-children').toggle(); 
+		  $('.sub-menu').toggle(); 
 
 		  // Based on @url: http://callmenick.com/post/slide-down-menu-with-jquery-and-css 
-		  $( '.menu_item_has_children' ).hover( 
+		  $( '.menu-item-has-children' ).hover( 
 		          function(){ 
-		              $(this).children('.sub-menu').toggle(); 
+									console.log('hoooover');
+		              $(this).children('.sub-menu').toggle(500); 
 		          }, 
 		          function(){ 
-		              $(this).children('.menu-item').slideUp(500); 
+		              $(this).children('.sub-menu').slideUp(500); 
 		          } 
 		      ); 
 		} )( jQuery ); // jquery end 
