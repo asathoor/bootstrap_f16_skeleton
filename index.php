@@ -14,9 +14,16 @@ get_header();
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <h3>Column 1</h3>
-      <p>Lorem ipsum dolor..</p>
-      <p>Ut enim ad..</p>
+ 			<img 
+				src="<?php bloginfo('template_directory'); ?>/images/speaker.jpg" 
+				alt="speaker" 
+				id="sampleImage">
+		<p>
+			Normally we'd avoid hardcoded image links. But sometimes
+			images are just part of the allover design. In such cases
+			this link works.
+		</p>
+
     </div>
     <div class="col-sm-4">
 
