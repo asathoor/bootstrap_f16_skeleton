@@ -14,8 +14,20 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
+img {
+	max-width: 100% !important;
+	height: auto;	
+}
+
+.size-full {
+	max-width: 100% !important;
+	height: auto;	
+
+}
+
 #sampleImage {
 	max-width: 100%;
 	height: auto;
 }
+
 
