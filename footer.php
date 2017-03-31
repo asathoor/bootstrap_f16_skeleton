@@ -2,8 +2,6 @@
 
 	<!-- add your scripts here -->
 
-	<?php wp_footer(); // load WP-related footer scripts ?>
-
 	<!-- Jquery menu sample --> 
 	<script> 
 		/* <![CDATA[ */ 
