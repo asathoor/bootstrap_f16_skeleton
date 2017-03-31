@@ -14,7 +14,6 @@
 		  // Based on @url: http://callmenick.com/post/slide-down-menu-with-jquery-and-css 
 		  $( '.menu-item-has-children' ).hover( 
 		          function(){ 
-									console.log('hoooover');
 		              $(this).children('.sub-menu').toggle(500); 
 		          }, 
 		          function(){ 

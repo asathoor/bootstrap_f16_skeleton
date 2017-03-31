@@ -22,6 +22,8 @@ In the markup you need to add a link to the template directory. Use code along t
 <img src="<?php get_stylesheet_directory() ?>/images/FILENAME.png" alt="">
 ~~~~
 
+In this way you could add a logo, or similar.
+
 ## Functions
 
 Have a look at functions.php. Here we define theme options, like:
