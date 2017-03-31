@@ -19,7 +19,7 @@ In this theme the loop is extremely simple. You may want to improve the loop, he
 In the markup you need to add a link to the template directory. Use code along these lines:
 
 ~~~~
-<img src="<?php bloginfo('template_directory'); ?>/images/FILENAME.png" alt="" width="" height="" />
+<img src="<?php get_stylesheet_directory() ?>/images/FILENAME.png" alt="">
 ~~~~
 
 ## Functions
