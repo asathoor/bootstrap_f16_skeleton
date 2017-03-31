@@ -30,6 +30,9 @@ Have a look at functions.php. Here we define theme options, like:
 * Widget areas
 * Additional WordPress functionality
 
+## Costum Pages
+
+* [WordPress Template Hierarchy](https://developer.wordpress.org/themes/basics/template-hierarchy/)
 
 ## Scripts and Stylesheets
 
@@ -57,3 +60,5 @@ No SEO is used. Add meta-tags, see my [SEO II Exercise](https://github.com/asath
 ## Further Development
 
 For code adding functionality like costum header, logo, or background image, please refer to [petj-mvp](https://github.com/asathoor/petj-mvp).
+
+
