@@ -1,3 +1,8 @@
+<?php
+/**
+ * file: header.php
+ */
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -22,5 +27,17 @@
 
 	</head>
 <body>
+
+<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
+<header class="jumbotron text-center">
+
+	<img 
+				src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
+				alt="speaker" 
+				id="logoImage">
+
+  <h1><?php bloginfo('name'); ?></h1>
+  <p><?php bloginfo('description'); ?></p> 
+</header>
 
 <!-- ends: header.php -->
