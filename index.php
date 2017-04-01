@@ -15,7 +15,9 @@ get_header();
 
 			<?php hej_verden( 
 				'Multimedia Tutorials!', 
-				'Multimusen is a collection of 400+ articles and tutorials about multimedia design.' 
+				'Multimusen is a collection of 400+ articles and tutorials about multimedia, 
+					and web programming. Here you\'ll find tips and tricks about: 
+					HTML, CSS, JavaScript, PHP, MySQL, and WordPress.' 
 			); // see: functions.php ?>
 
 		</article>		
@@ -23,17 +25,30 @@ get_header();
 
     <article class="col-sm-6">
 
+			<h3>Feature Article:</h3>
+
 			<?php petj_display_post( 1173 ); // see: functions.php ?>
 
 		</article>
 
     <article class="col-sm-3">
 
+			<h3>Feature Article:</h3>
+
 			<?php petj_display_post( 1178 ); // see: functions.php ?>
 
 		</article>
 
 	</div><!-- row -->
+
+	<div class="row">
+		<div class="col-sm-12">
+			<hr>
+		</div>
+	</div><!-- row -->
+
+
+
 
 	<!-- second row -->
   <div class="row">

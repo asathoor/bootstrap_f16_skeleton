@@ -152,7 +152,7 @@ add_theme_support( 'custom-header', $petjHeaderImage );
  */
 function hej_verden( $title, $text ) {
 
-	echo '<h4 class="hejVerdenTitle"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> ' . $title . '</h4>';
+	echo '<h3 class="hejVerdenTitle"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> ' . $title . '</h3>';
 	echo '<div class="hejVerdenText">' . $text . '</div>';
 
 }
