@@ -165,7 +165,13 @@ function petj_display_post( $postId ) {
 
 				$feat_1 = get_post( $postId ); 
 				$title = $feat_1->post_title;
-				echo '<h4><span class="glyphicon glyphicon-star" aria-hidden="true"></span> ' . $title . '</h5>';
+				echo '<h4><a href="'
+				. get_bloginfo('url') 
+				. '/?p=' 
+				. $postId
+				. '">' 
+				. '<span class="glyphicon glyphicon-star" aria-hidden="true"></span> ' . $title . '</h5>';
+
 				//print_r( $feat_1 );
 
 				// read more link
@@ -173,7 +179,7 @@ function petj_display_post( $postId ) {
 				. get_bloginfo('url') 
 				. '/?p=' 
 				. $postId
-				. '"> Read it all! </a>';
+				. '"> <span class="label label-success">Read it Now!</span> </a>';
 
 }
 

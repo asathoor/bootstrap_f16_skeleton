@@ -23,6 +23,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
 #logoImage {
 	width: 117px;
 	height: auto;
+	position: relative;
+	float: left;
+	margin-left: 1.1em;
+	margin-right: 1.1em;
 }
 
 /* === 2. menu === */
@@ -101,8 +105,14 @@ header {
 	top: -29px;
 }
 
-/* === 3. wp requires === */
+header a:hover {
 
+	text-decoration:none;
+
+
+}
+
+/* === 3. wp requires === */
 
 /* control large images */
 img {
@@ -169,7 +179,23 @@ font-style: italic;
 }
 
 
-/* 4. Other stuff */
+/* 4. Layout */
+
+article {
+	margin-bottom: 2.3em;
+}
+
+
+/* 5. Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
+
+.jumbotron a h1 {
+		font-family: 'Lobster Two', cursive;
+		color: #fff;
+}
+
+/* X. Other stuff */
 
 /* search form */
 .search-form {

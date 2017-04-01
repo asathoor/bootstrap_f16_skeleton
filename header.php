@@ -63,15 +63,19 @@
 
 
 <!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
-<header class="jumbotron text-center">
+<header class="jumbotron">
 
-	<img 
-				src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
-				alt="speaker" 
-				id="logoImage">
+	<a href="/">
+		<img 
+					src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
+					alt="speaker" 
+					id="logoImage">
+
 
   <h1><?php bloginfo('name'); ?></h1>
-  <p><?php bloginfo('description'); ?></p> 
+
+	</a>
+
 </header>
 
 

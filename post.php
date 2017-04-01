@@ -1,6 +1,6 @@
 <?php
 /**
- * file: index.php
+ * file: post.php
  */
 get_header();
 ?>
@@ -8,20 +8,13 @@ get_header();
 
 <div class="container">
 
-	<!-- second row -->
-  <div class="row">
-    <div class="col-sm-3">
-			<!-- search form -->
-	    <?php get_search_form( ); ?>
-  	</div>
-
-    <main class="col-sm-6">
+    <main class="col-sm-8">
 			<!-- loop start -->
 				<?php get_template_part( "loop" ); ?>
 			<!-- loop end -->
     </main>
 
-    <aside class="col-sm-3">
+    <aside class="col-sm-4">
 			<?php get_sidebar(); ?>
     </aside>
 
