@@ -18,7 +18,6 @@
 
 		<!-- jquery (load this before the bootstrap js -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-		<!-- ?php wp_enqueue_script("jquery"); // enable jquery ? -->
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -40,7 +39,7 @@
   <p><?php bloginfo('description'); ?></p> 
 </header>
 
-<!-- bootstrap menu, @url: http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/## -->
+<!-- Hardcoded bootstrap menu, @url: http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/## -->
 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container-fluid">
         <div class="navbar-header"><a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
@@ -49,18 +48,30 @@
         </div>
         <div class="collapse navbar-collapse navbar-menubuilder">
             <ul class="nav navbar-nav navbar-left">
-                <li><a href="<?php bloginfo('url'); ?>">Home</a>
+                <li>
+									<a href="<?php bloginfo('url'); ?>">
+										<span class="glyphicon glyphicon-home" aria-hidden="true"></span> 
+										 Home</a>
                 </li>
-                <li><a href="<?php bloginfo('url'); ?>/1md14y1-intro-day-2-xampp/">Xampp Intro</a>
+                <li>
+									<a href="<?php bloginfo('url'); ?>/1md14y1-intro-day-2-xampp/">
+										<span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> 
+									 	Xampp Intro</a>
                 </li>
-                <li><a href="<?php bloginfo('url'); ?>/about/">About Us</a>
+                <li>
+									<a href="<?php bloginfo('url'); ?>/about/">
+										<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 
+										 About</a>
                 </li>
-                <li><a href="<?php bloginfo('url'); ?>/sitemap/">Sitemap</a>
+                <li>
+									<a href="<?php bloginfo('url'); ?>/sitemap/">
+										<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 
+										 Sitemap</a>
                 </li>
             </ul>
         </div>
     </div>
-</div>
+</div><!-- ends bootstrap menu -->
 
 
 <!-- ends: header.php -->

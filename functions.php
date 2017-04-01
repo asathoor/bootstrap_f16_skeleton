@@ -144,4 +144,38 @@ $petjHeaderImage = array(
 );
 add_theme_support( 'custom-header', $petjHeaderImage );
 */
+
+/**
+ * COSTUM FUNCTIONS
+ * ( use your functions anywhere in the theme ... )
+ * Yep! That's why the file is called functions.php
+ */
+function hej_verden( $title, $text ) {
+
+	echo '<h4 class="hejVerdenTitle"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> ' . $title . '</h4>';
+	echo '<div class="hejVerdenText">' . $text . '</div>';
+
+}
+
+/**
+ * Display any post by id
+ * about get_post(): @url https://developer.wordpress.org/reference/functions/get_post/
+ */
+function petj_display_post( $postId ) {
+
+				$feat_1 = get_post( $postId ); 
+				$title = $feat_1->post_title;
+				echo '<h4><span class="glyphicon glyphicon-star" aria-hidden="true"></span> ' . $title . '</h5>';
+				//print_r( $feat_1 );
+
+				// read more link
+				echo '<a href="'
+				. get_bloginfo('url') 
+				. '/?p=' 
+				. $postId
+				. '"> Read it all! </a>';
+
+}
+
+
 ?>
