@@ -21,7 +21,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 #logoImage {
-	width: 288px;
+	width: 117px;
 	height: auto;
 }
 
@@ -44,7 +44,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	text-decoration:none; 
 }
 
-/* Bootstrap menu */
+/* the Bootstrap menu */
 
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(119, 119, 119, 1);
@@ -88,30 +88,88 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 /* adjustment: bootstrap menu */
+
+/*
 #custom-bootstrap-menu {
 	position: relative;
 	top: -29px;
 }
+*/
 
-/* === 3. wp requres === */
+header {
+	position: relative;
+	top: -29px;
+}
+
+/* === 3. wp requires === */
 
 
-
+/* control large images */
 img {
-	max-width: 100% !important;
-	height: auto;	
+  max-width: 100%;
+  height: auto;
 }
 
-.size-full {
-	max-width: 100% !important;
-	height: auto;	
-
+.entry-content img, 
+.entry-summary img, 
+.comment-content img, 
+.widget img, 
+.wp-caption {
+  max-width: 100%;
+  height: auto;
 }
 
-#sampleImage {
+/* pre overflow */
+pre, code {
+  overflow: auto;
+}
+
+/* Recommended in connection with content width in functions.php */
+.size-auto, 
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
 	max-width: 100%;
 	height: auto;
 }
+
+/* WP Required classes */
+.wp-caption-text {
+  font-style: italic;
+}
+
+.sticky {
+  background-color: silver;
+}
+
+.screen-reader-text {
+font-style: italic;
+}
+
+.gallery-caption {
+font-style: italic;
+}
+
+.bypostauthor {
+font-style: italic;
+  font-weight: bold;
+}
+
+.alignright {
+  text-align: right;
+}
+
+.alignleft {
+  text-align: left;
+}
+
+.aligncenter {
+  text-align: center;
+}
+
+
+/* 4. Other stuff */
 
 /* search form */
 .search-form {

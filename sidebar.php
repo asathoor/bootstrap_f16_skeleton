@@ -1,7 +1,7 @@
 <!-- from: sidebar.php --> 
 
     <!-- Menu -->  
-    <h3> <?php _e('Menu','petj_f16_bootstrap'); ?> </h3>
+    <h3> <?php _e('Articles and Tutorials','petj_f16_bootstrap'); ?> </h3>
 
 		<nav>
 	    <?php wp_nav_menu( array( 'theme_location' => 'sidebar-menu' ) ); ?>

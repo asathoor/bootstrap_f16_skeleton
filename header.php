@@ -27,18 +27,6 @@
 	</head>
 <body>
 
-<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
-<header class="jumbotron text-center">
-
-	<img 
-				src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
-				alt="speaker" 
-				id="logoImage">
-
-  <h1><?php bloginfo('name'); ?></h1>
-  <p><?php bloginfo('description'); ?></p> 
-</header>
-
 <!-- Hardcoded bootstrap menu, @url: http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/## -->
 <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
     <div class="container-fluid">
@@ -72,6 +60,20 @@
         </div>
     </div>
 </div><!-- ends bootstrap menu -->
+
+
+<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
+<header class="jumbotron text-center">
+
+	<img 
+				src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
+				alt="speaker" 
+				id="logoImage">
+
+  <h1><?php bloginfo('name'); ?></h1>
+  <p><?php bloginfo('description'); ?></p> 
+</header>
+
 
 
 <!-- ends: header.php -->
