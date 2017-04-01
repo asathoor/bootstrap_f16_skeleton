@@ -40,4 +40,27 @@
   <p><?php bloginfo('description'); ?></p> 
 </header>
 
+<!-- bootstrap menu, @url: http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/## -->
+<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header"><a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="<?php bloginfo('url'); ?>">Home</a>
+                </li>
+                <li><a href="/products">Products</a>
+                </li>
+                <li><a href="/about-us">About Us</a>
+                </li>
+                <li><a href="/contact">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 <!-- ends: header.php -->

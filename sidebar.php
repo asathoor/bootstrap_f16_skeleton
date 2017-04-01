@@ -1,5 +1,4 @@
 <!-- from: sidebar.php --> 
-  <aside id="sidebar">
 
     <!-- Menu -->  
     <h3> <?php _e('Menu','petj_f16_bootstrap'); ?> </h3>
@@ -21,4 +20,5 @@
         </ul>
 
     <?php endif; ?>
-  </aside>
+
+<!-- ends sidebar.php -->
