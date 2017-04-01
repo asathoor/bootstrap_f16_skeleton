@@ -51,11 +51,11 @@
             <ul class="nav navbar-nav navbar-left">
                 <li><a href="<?php bloginfo('url'); ?>">Home</a>
                 </li>
-                <li><a href="/products">Products</a>
+                <li><a href="<?php bloginfo('url'); ?>/1md14y1-intro-day-2-xampp/">Xampp Intro</a>
                 </li>
-                <li><a href="/about-us">About Us</a>
+                <li><a href="<?php bloginfo('url'); ?>/about/">About Us</a>
                 </li>
-                <li><a href="/contact">Contact Us</a>
+                <li><a href="<?php bloginfo('url'); ?>/sitemap/">Sitemap</a>
                 </li>
             </ul>
         </div>
