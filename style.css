@@ -195,7 +195,48 @@ article {
 		color: #fff;
 }
 
-/* YouTube Video
+/* fonts: responsive */
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 3em;
+	}
+	h3 {
+		font-size: 4em;
+	}
+
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+	body {
+		font-size: 3em;
+	}
+	h3 {
+		font-size: 4em;
+	}
+
+}
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+	body {
+		font-size: 2em;
+	}
+	h3 {
+		font-size: 3em;
+	}
+
+
+}
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+	body {
+		font-size: 1.2em;
+	}
+}
+
+
+/* 6. YouTube Video
 
 YouTube videos may be too wide.
 Paste the video url in a div with 
