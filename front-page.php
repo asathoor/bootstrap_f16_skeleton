@@ -6,12 +6,12 @@ get_header();
 ?>
 <!-- file: index.php -->
 
-<div class="container">
+<div class="container-fluid">
 
 	<!-- first row: featured posts / pages -->
   <div class="row">
 
-    <article class="col-sm-3">
+    <article class="col-sm-12 col-lg-3">
 
 			<?php hej_verden( 
 				get_bloginfo('name'),
@@ -21,7 +21,7 @@ get_header();
 		</article>		
 
 
-    <article class="col-sm-6">
+    <article class="col-sm-12 col-lg-6">
 
 			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature: XAMPP</h3>
 
@@ -31,7 +31,7 @@ get_header();
 
 		</article>
 
-    <article class="col-sm-3">
+    <article class="col-sm-12 col-lg-3">
 
 			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
 
@@ -74,7 +74,7 @@ get_header();
 
 	<!-- second row -->
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-12 col-lg-3">
 
 			<!-- search form -->
 			<p>
@@ -84,13 +84,13 @@ get_header();
 
   	</div>
 
-    <main class="col-sm-6">
+    <main class="col-sm-12  col-lg-6">
 			<!-- loop start -->
 				<?php get_template_part( "loop" ); ?>
 			<!-- loop end -->
     </main>
 
-    <aside class="col-sm-3">
+    <aside class="col-sm-12 col-lg-3">
 
 			<?php get_sidebar(); ?>
 

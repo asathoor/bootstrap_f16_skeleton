@@ -6,7 +6,7 @@ get_header();
 ?>
 <!-- file: index.php -->
 
-<div class="container">
+<div class="container-fluid">
 
     <main class="col-sm-8">
 			<!-- loop start -->

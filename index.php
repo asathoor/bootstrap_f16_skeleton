@@ -6,7 +6,7 @@ get_header();
 ?>
 <!-- file: index.php -->
 
-<div class="container">
+<div class="container-fluid">
 
 	<!-- second row -->
   <div class="row">
