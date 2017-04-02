@@ -7,7 +7,7 @@
 /**
  * Set content width (media)
  */
-if ( ! isset( $content_width ) ) $content_width = 600;
+if ( ! isset( $content_width ) ) $content_width = 300;
 
 
 /**
@@ -152,8 +152,12 @@ add_theme_support( 'custom-header', $petjHeaderImage );
  */
 function hej_verden( $title, $text ) {
 
-	echo '<h3 class="hejVerdenTitle"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> ' . $title . '</h3>';
-	echo '<div class="hejVerdenText">' . $text . '</div>';
+	echo '<h3 class="hejVerdenTitle"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"></span> ' 
+	. $title 
+	. '</h3>'
+	. '<div class="hejVerdenText">' 
+	. $text 
+	. '</div>';
 
 }
 
@@ -182,6 +186,4 @@ function petj_display_post( $postId ) {
 				. '"> <span class="label label-success">Read it Now!</span> </a>';
 
 }
-
-
 ?>

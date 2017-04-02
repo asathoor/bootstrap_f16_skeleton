@@ -10,8 +10,12 @@
 	<script> 
 		/* <![CDATA[ */ 
 		( function( $ ) { 
-		  // code goes here 
-		  // console.log('Jquery is up and running.'); 
+
+			/**
+			 * Hover Menu
+			 * ( mobile friendly? )
+			 */
+ 
 		  // hide the children 
 		  $('.sub-menu').toggle(); 
 
@@ -26,6 +30,7 @@
 		      ); 
 		} )( jQuery ); // jquery end 
 		/* ]]> */ 
+
 	</script> 
 
 	<?php wp_footer(); // load WP-related footer scripts ?>

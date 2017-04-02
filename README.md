@@ -1,8 +1,8 @@
-# WordPress Theme Crash Course
+# WordPress Theme for Multimusen.dk
 
-This theme is a WordPress theme crash course. It's a skeleton for something, where you can develop your own design. 
-Bootstrap is used as a rapid development boiler plate. Since Bootstrap depends on Jquery, the theme is ready for that too.
-
+In this branch the theme has been ported to my website Multimusen.dk. A few tweaks had to be made,
+for instance the media width in functions.php. Apart from that the code is more or less the
+same as the basic theme skeleton.
 
 ## The Loop
 
