@@ -55,11 +55,9 @@ get_header();
 			?>
 			</ul>
 
-			<!-- the Xampp article -->
-			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature Article: </h3>
-
-			<!-- a feature: enter id -->			
+			<!-- FEATURE ARTICLES -->
 			<?php petj_display_post( 1173 ); // see: functions.php ?>
+			<?php petj_display_post( 1178 ); ?>
 
 
 		</article>

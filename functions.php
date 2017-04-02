@@ -170,24 +170,29 @@ function hej_verden( $title, $text ) {
  * about get_post(): @url https://developer.wordpress.org/reference/functions/get_post/
  */
 function petj_display_post( $postId ) {
+			?>
 
-				$feat_1 = get_post( $postId ); 
+			<hr>
+			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature Article:</h3>
+			<?php
+
+				$feat_1 = get_post( $postId ); // see get_post() on Codex
 				$title = $feat_1->post_title;
+
 				echo '<h4><a href="'
 				. get_bloginfo('url') 
 				. '/?p=' 
 				. $postId
 				. '">' 
-				. $title . '</h4>';
-
-				//print_r( $feat_1 );
+				. $title 
+				. '</h4>';
 
 				// read more link
 				echo '<a href="'
 				. get_bloginfo('url') 
 				. '/?p=' 
 				. $postId
-				. '"> <span class="label label-success">Read it Now!</span> </a>';
+				. '"> <span class="label label-success"> Read it Now! </span> </a>';
 
-}
+} // ends petj_display_post()
 ?>
