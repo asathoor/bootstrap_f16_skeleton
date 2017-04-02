@@ -8,9 +8,6 @@ get_header();
 
 <div class="container-fluid">
 
-	<!-- add Bootstrap Carousel -->
-	<?php get_template_part( 'carousel' ); ?>
-
   <div class="row">
 
     <article class="col-sm-12 col-lg-3">
@@ -24,6 +21,9 @@ get_header();
 
 
     <article class="col-sm-12 col-lg-6">
+
+			<!-- add Bootstrap Carousel -->
+			<?php get_template_part( 'carousel' ); ?>
 
 			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature: XAMPP</h3>
 
@@ -65,40 +65,6 @@ get_header();
 
 	</div><!-- row -->
 
-	<div class="row">
-		<div class="col-sm-12 aligncenter">
-			<hr>
-		</div>
-	</div><!-- row -->
-
-
-
-
-	<!-- second row -->
-  <div class="row">
-    <div class="col-sm-12 col-lg-3">
-
-			<!-- search form -->
-			<p>
-	    <?php get_search_form( ); ?>
-			</p>
-
-
-  	</div>
-
-    <main class="col-sm-12  col-lg-6">
-			<!-- loop start -->
-				<?php get_template_part( "loop" ); ?>
-			<!-- loop end -->
-    </main>
-
-    <aside class="col-sm-12 col-lg-3">
-
-			<?php get_sidebar(); ?>
-
-    </aside>
-
-  </div><!-- row -->
 </div><!-- .container -->
 
 <?php get_footer(); ?>
