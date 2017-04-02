@@ -15,8 +15,12 @@ if ( ! isset( $content_width ) ) $content_width = 300;
  * tip: let style.css be the last one.
  */
 function themeslug_enqueue_style() {
-	wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css', 
-  false );
+
+	// style.css
+	wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css', false );
+
+	// bootstrap carousel
+	wp_enqueue_style( 'bootstrap-carousel', get_template_directory_uri() . '/partials/carousel.css', false );
 }
 add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_style' );
 
