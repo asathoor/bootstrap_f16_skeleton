@@ -278,3 +278,10 @@ See @url: http://www.wpstuffs.com/youtube-videos-responsive-wordpress/
 .search-form {
 	text-align: left;
 }
+
+/* Dannebrog (plugin) */
+#Dannebrog {
+	width: 123px;
+	height: auto;
+	margin-bottom: 0.2em;
+}

@@ -8,7 +8,9 @@ get_header();
 
 <div class="container-fluid">
 
-	<!-- first row: featured posts / pages -->
+	<!-- add Bootstrap Carousel -->
+	<?php get_template_part( 'carousel' ); ?>
+
   <div class="row">
 
     <article class="col-sm-12 col-lg-3">

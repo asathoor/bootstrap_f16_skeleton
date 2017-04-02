@@ -8,7 +8,8 @@ get_header();
 
 <div class="container-fluid">
 
-	<!-- second row -->
+	<?php get_template_part( 'partials', 'carousel' ); ?>
+
   <div class="row">
     <div class="col-sm-3">
 			<!-- search form -->
