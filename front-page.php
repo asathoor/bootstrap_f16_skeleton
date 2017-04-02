@@ -25,19 +25,13 @@ get_header();
 			<!-- add Bootstrap Carousel -->
 			<?php get_template_part( 'carousel' ); ?>
 
-			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature: XAMPP</h3>
-
-			<p>We've got lots of questions about Xampp. Here's a howto with some of the best videos about XAMPP from YouTube.</p>
-
-			<?php petj_display_post( 1173 ); // see: functions.php ?>
-
 		</article>
 
     <article class="col-sm-12 col-lg-3">
 
 			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
 
-			<ul>
+			<ul id="newOnMultimusen">
 			<?php
 				$args = array( 'numberposts' => '5', 'tax_query' => array(
 						array(
@@ -60,6 +54,12 @@ get_header();
 				wp_reset_query();
 			?>
 			</ul>
+
+			<!-- the Xampp article -->
+			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature: XAMPP</h3>
+			<p>We've got lots of questions about Xampp. Here's a howto with some of the best videos about XAMPP from YouTube.</p>
+			<?php petj_display_post( 1173 ); // see: functions.php ?>
+
 
 		</article>
 
