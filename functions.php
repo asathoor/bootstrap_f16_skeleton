@@ -178,7 +178,7 @@ function petj_display_post( $postId ) {
 				. '/?p=' 
 				. $postId
 				. '">' 
-				. '<span class="glyphicon glyphicon-star" aria-hidden="true"></span> ' . $title . '</h5>';
+				. $title . '</h4>';
 
 				//print_r( $feat_1 );
 

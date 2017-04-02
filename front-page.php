@@ -56,8 +56,9 @@ get_header();
 			</ul>
 
 			<!-- the Xampp article -->
-			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature: XAMPP</h3>
-			<p>We've got lots of questions about Xampp. Here's a howto with some of the best videos about XAMPP from YouTube.</p>
+			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature Article: </h3>
+
+			<!-- a feature: enter id -->			
 			<?php petj_display_post( 1173 ); // see: functions.php ?>
 
 
