@@ -31,9 +31,10 @@
 			 */
  
 		  // hide the children 
-		  $('.sub-menu').toggle(); 
+		  //$('.sub-menu').toggle(); 
 
 		  // Based on @url: http://callmenick.com/post/slide-down-menu-with-jquery-and-css 
+			/*
 		  $( '.menu-item-has-children' ).hover( 
 		          function(){ 
 		              $(this).children('.sub-menu').toggle(500); 
@@ -42,6 +43,8 @@
 		              $(this).children('.sub-menu').slideUp(500); 
 		          } 
 		      ); 
+				*/
+
 		} )( jQuery ); // jquery end 
 		/* ]]> */ 
 

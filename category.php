@@ -8,15 +8,22 @@ get_header();
 
 <div class="container-fluid">
 
-    <main class="col-sm-8">
+		<aside class="col-sm-3">
+			<h3>Recommended</h3>
+
+			<?php	petj_display_post(4871); ?>
+
+		</aside>
+
+    <main class="col-sm-6">
 			<!-- loop start -->
 
-<div id="catDescription">
-	<h3><?php single_cat_title('Currently browsing '); ?></h3>
-	<p>
-		<?php echo category_description(); ?>
-	</p>
-</div>	
+				<div id="catDescription">
+					<h3><?php single_cat_title('Currently browsing '); ?></h3>
+					<p>
+						<?php echo category_description(); ?>
+					</p>
+				</div>	
 
 				<ul>
 				<?php 
@@ -43,7 +50,7 @@ get_header();
 			<!-- loop end -->
     </main>
 
-    <aside class="col-sm-4">
+    <aside class="col-sm-3">
 			<?php get_sidebar(); ?>
     </aside>
 

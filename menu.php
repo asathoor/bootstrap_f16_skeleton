@@ -28,10 +28,7 @@
 								<!-- MMD Classes -->
                 <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">MMD Classes <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">MMD1</a></li>
                         <li><a href="/category/MMD2/">MMD2</a></li>
-                        <li><a href="/about-us">MMD3</a></li>
-                        <li><a href="/about-us">MMD4</a></li>
                     </ul>
                 </li>
 
