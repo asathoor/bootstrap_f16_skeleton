@@ -179,7 +179,7 @@ function petj_display_post( $postId ) {
 				$feat_1 = get_post( $postId ); // see get_post() on Codex
 				$title = $feat_1->post_title;
 
-				echo '<h4><a href="'
+				echo '<div><h4><a href="'
 				. get_bloginfo('url') 
 				. '/?p=' 
 				. $postId
@@ -192,7 +192,7 @@ function petj_display_post( $postId ) {
 				. get_bloginfo('url') 
 				. '/?p=' 
 				. $postId
-				. '"> <span class="label label-success"> Read it Now! </span> </a>';
+				. '"> <span class="label label-success"> Read it Now! </span> </a></div>';
 
 } // ends petj_display_post()
 ?>

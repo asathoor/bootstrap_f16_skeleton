@@ -14,15 +14,21 @@ get_header();
 
 			<?php hej_verden( 
 				get_bloginfo('name'),
-				get_bloginfo('description') . '<p>Editor: Per Thykjaer Jensen</p>'
+				get_bloginfo('description')
 			); // see: functions.php ?>
 
-			<aside>
-				<!-- search form -->
-				<br><br>
-			  <?php get_search_form( ); ?>
 
-			</aside>
+		<!-- avatar -->
+			<p>
+				<?php echo get_avatar(1,66); ?><br>
+				Editor: Per Thykjaer Jensen
+			</p>
+
+			<!-- Feature -->
+			<?php petj_display_post( 5459 ); // see: functions.php ?>
+			<?php petj_display_post( 4880 ); // see: functions.php ?>
+
+
 
 		</article>
 
@@ -63,13 +69,11 @@ get_header();
 			?>
 			</ul>
 
-			<!-- FEATURE ARTICLES -->
-			<?php petj_display_post( 1173 ); // see: functions.php ?>
-			<?php petj_display_post( 1178 ); ?>
 
-			
-
-
+			<!-- search form -->
+			<br><br>
+			<?php get_search_form( ); ?>
+		
 		</article>
 
 	</div><!-- row -->
