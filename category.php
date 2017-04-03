@@ -10,6 +10,14 @@ get_header();
 
     <main class="col-sm-8">
 			<!-- loop start -->
+
+<div id="catDescription">
+	<h3><?php single_cat_title('Currently browsing '); ?></h3>
+	<p>
+		<?php echo category_description(); ?>
+	</p>
+</div>	
+
 				<ul>
 				<?php 
 

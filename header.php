@@ -31,57 +31,24 @@
 	</head>
 <body>
 
-<!-- Hardcoded bootstrap menu, @url: http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/## -->
-<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
-    <div class="container-fluid">
-        <div class="navbar-header"><a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-            </button>
-        </div>
-        <div class="collapse navbar-collapse navbar-menubuilder">
-            <ul class="nav navbar-nav navbar-left">
-                <li>
-									<a href="<?php bloginfo('url'); ?>">
-										<span class="glyphicon glyphicon-home" aria-hidden="true"></span> 
-										 Home</a>
-                </li>
-                <li>
-									<a href="<?php bloginfo('url'); ?>/1md14y1-intro-day-2-xampp/">
-										<span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> 
-									 	Xampp Intro</a>
-                </li>
-                <li>
-									<a href="<?php bloginfo('url'); ?>/about/">
-										<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 
-										 About</a>
-                </li>
-                <li>
-									<a href="<?php bloginfo('url'); ?>/sitemap/">
-										<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span> 
-										 Sitemap</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div><!-- ends bootstrap menu -->
+	<?php get_template_part( "menu" ); ?>
+
+	<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
+	<header class="jumbotron">
+
+		<a href="/">
+			<img 
+						src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
+						alt="speaker" 
+						id="logoImage">
 
 
-<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
-<header class="jumbotron">
+		<h1><?php bloginfo('name'); ?></h1>
 
-	<a href="/">
-		<img 
-					src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
-					alt="speaker" 
-					id="logoImage">
+		</a>
 
-
-  <h1><?php bloginfo('name'); ?></h1>
-
-	</a>
-
-</header>
+	</header>
 
 
 
-<!-- ends: header.php -->
+	<!-- ends: header.php -->

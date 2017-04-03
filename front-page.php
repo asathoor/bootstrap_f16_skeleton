@@ -17,7 +17,15 @@ get_header();
 				get_bloginfo('description') . '<p>Editor: Per Thykjaer Jensen</p>'
 			); // see: functions.php ?>
 
-		</article>		
+			<aside>
+				<!-- search form -->
+				<br><br>
+			  <?php get_search_form( ); ?>
+
+			</aside>
+
+		</article>
+
 
 
     <article class="col-sm-12 col-lg-6">
