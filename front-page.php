@@ -59,6 +59,8 @@ get_header();
 			<?php petj_display_post( 1173 ); // see: functions.php ?>
 			<?php petj_display_post( 1178 ); ?>
 
+			
+
 
 		</article>
 
