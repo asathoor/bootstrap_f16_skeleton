@@ -18,15 +18,11 @@
 										 Home</a>
                 </li>
 
-								<!-- Xampp -->
-                <li>
-									<a href="<?php bloginfo('url'); ?>/1md14y1-intro-day-2-xampp/">
-										<span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> 
-									 	Xampp Intro</a>
-                </li>
 
 								<!-- MMD Classes -->
-                <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">MMD Classes <b class="caret"></b></a>
+                <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">
+										<span class="glyphicon glyphicon-education" aria-hidden="true"></span> 
+										Multimedia Designer Classes <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/category/MMD2/">MMD2</a></li>
                     </ul>
@@ -38,6 +34,14 @@
 										<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> 
 										 About</a>
                 </li>
+
+								<!-- Xampp -->
+                <li>
+									<a href="<?php bloginfo('url'); ?>/1md14y1-intro-day-2-xampp/">
+										<span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> 
+									 	Xampp Intro</a>
+                </li>
+
 
 								<!-- sitemap -->
                 <li>
