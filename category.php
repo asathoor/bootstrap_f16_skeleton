@@ -11,7 +11,8 @@ get_header();
 		<aside class="col-sm-3">
 			<h3>Recommended</h3>
 
-			<?php	petj_display_post(4872); ?>
+			<?php	petj_display_post(4872, 'thumbs-up'); ?>
+			<hr>
 
 		</aside>
 

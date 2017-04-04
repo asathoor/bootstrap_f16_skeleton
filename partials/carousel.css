@@ -82,3 +82,10 @@
         font-size: 30px;
     }
 }
+
+/**
+ * Rounded corners
+ */
+div .item img {
+	border-radius: 25px;
+}
