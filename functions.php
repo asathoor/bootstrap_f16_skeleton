@@ -169,17 +169,22 @@ function hej_verden( $title, $text ) {
  * Display any post by id
  * about get_post(): @url https://developer.wordpress.org/reference/functions/get_post/
  */
-function petj_display_post( $postId ) {
+function petj_display_post( $postId, $glyph ) {
+	
+			if(!isset($glyph)) {
+					$glyph = 'tent';
+				}
+	
 			?>
 
 			<hr>
-			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature Article:</h3>
+			<h3></h3>
 			<?php
 
 				$feat_1 = get_post( $postId ); // see get_post() on Codex
 				$title = $feat_1->post_title;
 
-				echo '<div><h4><a href="'
+				echo '<div><h4><span class="glyphicon glyphicon-' . $glyph . '" aria-hidden="true"></span> <a href="'
 				. get_bloginfo('url') 
 				. '/?p=' 
 				. $postId
