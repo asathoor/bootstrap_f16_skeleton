@@ -43,6 +43,14 @@
                 </li>
 
 
+								<!-- Links -->
+                <li>
+									<a href="<?php bloginfo('url'); ?>/links/">
+										<span class="glyphicon glyphicon-link" aria-hidden="true"></span> 
+									 	Links</a>
+                </li>
+
+
 								<!-- sitemap -->
                 <li>
 									<a href="<?php bloginfo('url'); ?>/sitemap/">
