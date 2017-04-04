@@ -169,17 +169,22 @@ function hej_verden( $title, $text ) {
  * Display any post by id
  * about get_post(): @url https://developer.wordpress.org/reference/functions/get_post/
  */
-function petj_display_post( $postId ) {
+function petj_display_post( $postId, $glyph ) {
+	
+			if(!isset($glyph)) {
+					$glyph = 'tent';
+				}
+	
 			?>
 
 			<hr>
-			<h3><span class="glyphicon glyphicon-tower" aria-hidden="true"></span> Feature Article:</h3>
+			<h3></h3>
 			<?php
 
 				$feat_1 = get_post( $postId ); // see get_post() on Codex
 				$title = $feat_1->post_title;
 
-				echo '<div><h4><a href="'
+				echo '<div><h4><span class="glyphicon glyphicon-' . $glyph . '" aria-hidden="true"></span> <a href="'
 				. get_bloginfo('url') 
 				. '/?p=' 
 				. $postId
@@ -195,4 +200,39 @@ function petj_display_post( $postId ) {
 				. '"> <span class="label label-success"> Read it Now! </span> </a></div>';
 
 } // ends petj_display_post()
+
+/**
+ * Mailform from one.com
+ * (Because: PHP mail() is disabled)
+ * Enter the domain and email.
+ */
+function petj_one_mail( $domain, $email ){
+	?>
+	<form method="post" action="http://<?php echo $domain; ?>/cgi-bin/FormMail.pl" 
+	accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
+	document.charset = 'ISO-8859-1'; 
+	window.onbeforeunload = function () {document.charset=originalCharset;};">
+	Name
+	<br />
+	<input name="realname" />
+	<br />
+	Email
+	<br />
+	<input name="email" />
+	<br />
+	Message
+	<br />
+	<textarea cols="20" rows="10" name="Message"></textarea>
+	<br />
+	<input type="submit" value="Send" />
+	<input type="hidden" name="recipient" value="<?php echo $email; ?>" />
+	<input type="hidden" name="subject" value="Subject" />
+	<input type="hidden" name="redirect" 
+	value="http://<?php echo $domain; ?>/thanks/" />
+	<input type="hidden" name="missing_fields_redirect" 
+	value="http://<?php echo $domain; ?>/404" />
+	<input type="hidden" name="required" value="realname,email,Message" />
+	</form>
+	<?php
+} // end petj_one_mail()
 ?>

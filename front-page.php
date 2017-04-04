@@ -12,37 +12,7 @@ get_header();
 
     <article class="col-sm-12 col-lg-3">
 
-			<?php hej_verden( 
-				get_bloginfo('name'),
-				get_bloginfo('description')
-			); // see: functions.php ?>
-
-
-		<!-- avatar -->
-			<p>
-				<?php echo get_avatar(1,66); ?><br>
-				Editor: Per Thykjaer Jensen
-			</p>
-
-			<!-- Feature -->
-			<?php petj_display_post( 5459 ); // see: functions.php ?>
-			<?php petj_display_post( 4880 ); // see: functions.php ?>
-
-
-
-		</article>
-
-
-
-    <article class="col-sm-12 col-lg-6">
-
-			<!-- add Bootstrap Carousel -->
-			<?php get_template_part( 'carousel' ); ?>
-
-		</article>
-
-    <article class="col-sm-12 col-lg-3">
-
+			<!-- new on multimusen -->
 			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
 
 			<ul id="newOnMultimusen">
@@ -69,10 +39,46 @@ get_header();
 			?>
 			</ul>
 
+			<hr>
+
+
+		<!-- site description -->
+			<?php hej_verden( 
+				get_bloginfo('name'),
+				get_bloginfo('description')
+			); // see: functions.php ?>
+
+
+		<!-- avatar -->
+
+				<p><?php echo get_avatar(1,66); ?><br>
+				Editor: Per Thykjaer Jensen</p>
+				
+				<hr>
+
+
+	</article>
+
+    <article class="col-sm-12 col-lg-6">
+
+			<!-- add Bootstrap Carousel -->
+			<?php get_template_part( 'carousel' ); ?>
+
+		</article>
+
+    <article class="col-sm-12 col-lg-3">
+
+			<!-- Feature -->
+			<hr>
+
+			<h3> Selected Articles </h3>
+			<?php petj_display_post( 5347, 'hand-right'); ?>
+			<?php petj_display_post( 5459, 'hand-right' ); // see: functions.php ?>
+			<?php petj_display_post( 4880, 'hand-right'); ?>
+			<hr>
 
 			<!-- search form -->
-			<br><br>
-			<?php get_search_form( ); ?>
+			<?php //get_search_form( ); ?>
 		
 		</article>
 
