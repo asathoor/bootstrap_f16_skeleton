@@ -178,7 +178,6 @@ function petj_display_post( $postId, $glyph ) {
 			?>
 
 			<hr>
-			<h3></h3>
 			<?php
 
 				$feat_1 = get_post( $postId ); // see get_post() on Codex
@@ -190,7 +189,7 @@ function petj_display_post( $postId, $glyph ) {
 				. $postId
 				. '">' 
 				. $title 
-				. '</h4>';
+				. '</a></h4>';
 
 				// read more link
 				echo '<a href="'
@@ -213,25 +212,23 @@ function petj_one_mail( $domain, $email ){
 	document.charset = 'ISO-8859-1'; 
 	window.onbeforeunload = function () {document.charset=originalCharset;};">
 	Name
-	<br />
-	<input name="realname" />
-	<br />
+	<br>
+	<input name="realname">
+	<br>
 	Email
-	<br />
-	<input name="email" />
-	<br />
+	<br>
+	<input name="email">
+	<br>
 	Message
-	<br />
+	<br>
 	<textarea cols="20" rows="10" name="Message"></textarea>
-	<br />
-	<input type="submit" value="Send" />
-	<input type="hidden" name="recipient" value="<?php echo $email; ?>" />
-	<input type="hidden" name="subject" value="Subject" />
-	<input type="hidden" name="redirect" 
-	value="http://<?php echo $domain; ?>/thanks/" />
-	<input type="hidden" name="missing_fields_redirect" 
-	value="http://<?php echo $domain; ?>/404" />
-	<input type="hidden" name="required" value="realname,email,Message" />
+	<br>
+	<input type="submit" value="Send">
+	<input type="hidden" name="recipient" value="<?php echo $email; ?>">
+	<input type="hidden" name="subject" value="Subject">
+	<input type="hidden" name="redirect" value="http://<?php echo $domain; ?>/thanks/">
+	<input type="hidden" name="missing_fields_redirect" value="http://<?php echo $domain; ?>/404">
+	<input type="hidden" name="required" value="realname,email,Message">
 	</form>
 	<?php
 } // end petj_one_mail()
