@@ -46,6 +46,14 @@
 										 Sitemap</a>
                 </li>
 
+								<!-- Contact -->
+                <li>
+									<a href="<?php bloginfo('url'); ?>/contact/">
+										<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> 
+										 Contact</a>
+                </li>
+
+
             </ul><!-- ends nav -->
         </div>
     </div>

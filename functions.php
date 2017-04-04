@@ -200,4 +200,39 @@ function petj_display_post( $postId, $glyph ) {
 				. '"> <span class="label label-success"> Read it Now! </span> </a></div>';
 
 } // ends petj_display_post()
+
+/**
+ * Mailform from one.com
+ * (Because: PHP mail() is disabled)
+ * Enter the domain and email.
+ */
+function petj_one_mail( $domain, $email ){
+	?>
+	<form method="post" action="http://<?php echo $domain; ?>/cgi-bin/FormMail.pl" 
+	accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
+	document.charset = 'ISO-8859-1'; 
+	window.onbeforeunload = function () {document.charset=originalCharset;};">
+	Name
+	<br />
+	<input name="realname" />
+	<br />
+	Email
+	<br />
+	<input name="email" />
+	<br />
+	Message
+	<br />
+	<textarea cols="20" rows="10" name="Message"></textarea>
+	<br />
+	<input type="submit" value="Send" />
+	<input type="hidden" name="recipient" value="<?php echo $email; ?>" />
+	<input type="hidden" name="subject" value="Subject" />
+	<input type="hidden" name="redirect" 
+	value="http://<?php echo $domain; ?>/thanks/" />
+	<input type="hidden" name="missing_fields_redirect" 
+	value="http://<?php echo $domain; ?>/404" />
+	<input type="hidden" name="required" value="realname,email,Message" />
+	</form>
+	<?php
+} // end petj_one_mail()
 ?>

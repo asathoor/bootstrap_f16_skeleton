@@ -100,19 +100,25 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 */
 
-/*
 header {
 	position: relative;
-	top: -29px;
+	top: -16px;
 }
-*/
+
 
 header a:hover {
 
 	text-decoration:none;
-
-
 }
+
+/* Header gradient */
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaf4b+0,ff920a+100;Orange+3D+%231 */
+background: #ffaf4b; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffaf4b 0%, #ff920a 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffaf4b 0%,#ff920a 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+
 
 /* === 3. wp requires === */
 

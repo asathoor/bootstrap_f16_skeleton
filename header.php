@@ -6,8 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Bootstrap theme</title>
-
+		
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 		<!-- Bootstrap: responsive -->
