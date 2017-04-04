@@ -8,7 +8,7 @@ get_header();
 
 <div class="container-fluid">
 
-		<aside class="col-sm-12 col-lg-4">
+		<aside class="col-sm-12 col-lg-3">
 		<!-- site description -->
 			<?php hej_verden( 
 				get_bloginfo('name'),
@@ -22,16 +22,16 @@ get_header();
 			<hr>			
 		</aside>
 
-    <main class="col-sm-12 col-lg-4">
+    <main class="col-sm-12 col-lg-6">
 			<!-- loop start -->
 				<?php get_template_part( "loopPage" ); ?>
 			<!-- loop end -->
     </main>
 
-    <aside class="col-sm-12 col-sm-4">
+    <aside class="col-sm-12 col-sm-3">
 			<?php petj_display_post( 1263, 'hand-right'); // CV ?>
 			<?php petj_display_post( 5347, 'hand-right'); // Dannebrog ?>
-			<?php petj_display_post( 5347, 'hand-right'); // Comp. CMS art. ?>
+			<?php petj_display_post( 4853, 'hand-right'); // Comp. CMS art. ?>
 			</hr>
     </aside>
 
