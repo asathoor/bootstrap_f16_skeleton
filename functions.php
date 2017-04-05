@@ -232,4 +232,18 @@ function petj_one_mail( $domain, $email ){
 	</form>
 	<?php
 } // end petj_one_mail()
+
+/**
+ * Write linkname
+ * @dependency: wp_blogroll plugin
+ * NB: the wp_blogroll is discontinued
+ */
+function petj_link_cat( $linkCatname ){
+	?>
+	<div class="links">
+			<?php echo do_shortcode( '[wp-blogroll catname="'.$linkCatname.'"]' ); ?>
+	</div>
+	<hr>
+	<?php
+}
 ?>
