@@ -22,7 +22,7 @@
 								<!-- MMD Classes -->
                 <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">
 										<span class="glyphicon glyphicon-education" aria-hidden="true"></span> 
-										Multimedia Designer Classes <b class="caret"></b></a>
+										EAAA / BAAA <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/category/MMD2/">MMD2</a></li>
                     </ul>

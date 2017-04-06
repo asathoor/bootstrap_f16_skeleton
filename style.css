@@ -284,6 +284,19 @@ background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%); /* W3C, IE10+,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
 }
 
+
+/* 8. Blogroll (link collection) */
+.blogroll {
+	list-style-type: none;
+	display: block;
+	padding-left: 0;
+	}
+
+.blogroll li:nth-child(even) {
+	background: #d9e5f7;
+	}
+
+
 /* X. Other stuff */
 
 /* search form */
