@@ -6,7 +6,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		
+		<title>Bootstrap theme</title>
+
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
 		<!-- Bootstrap: responsive -->
@@ -28,7 +29,7 @@
 		<?php wp_head(); // hook ?>
 
 	</head>
-<body>
+<body <?php body_class(); ?>>
 
 	<?php get_template_part( "menu" ); ?>
 
@@ -42,7 +43,7 @@
 						id="logoImage">
 
 
-		<h1><?php bloginfo('name'); ?>.dk</h1>
+		<h1><?php bloginfo('name'); ?></h1>
 
 		</a>
 
