@@ -19,12 +19,15 @@
                 </li>
 
 
-								<!-- MMD Classes -->
+								<!-- EAAA -->
                 <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">
 										<span class="glyphicon glyphicon-education" aria-hidden="true"></span> 
 										EAAA / BAAA <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/category/MMD2/">MMD2</a></li>
+                        <li><a href="http://paste.ubuntu.com/">Ubuntu Pastebin</a></li>
+                        <li><a href="https://github.com/asathoor">Per's Github Repos</a></li>
+                        <li><a href="http://jsfiddle.net/user/petj/fiddles/">Per's JsFiddles</a></li>
                     </ul>
                 </li>
 

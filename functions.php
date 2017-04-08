@@ -262,4 +262,15 @@ remove_action('wp_head', 'parent_post_rel_link', 10, 0); // remove parent post l
 remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0); // remove the next and previous post links
 remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
+
+/**
+ * Class sample
+ */
+class Myclass  
+{  
+ public $petj_hello = "Hello World!";  
+}  
+$f = new MyClass;  
+//echo $f->petj_hello;  
+
 ?>
