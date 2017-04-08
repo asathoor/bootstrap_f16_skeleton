@@ -19,12 +19,15 @@
                 </li>
 
 
-								<!-- MMD Classes -->
+								<!-- EAAA -->
                 <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">
 										<span class="glyphicon glyphicon-education" aria-hidden="true"></span> 
-										Multimedia Designer Classes <b class="caret"></b></a>
+										EAAA / BAAA <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/category/MMD2/">MMD2</a></li>
+                        <li><a href="http://paste.ubuntu.com/">Ubuntu Pastebin</a></li>
+                        <li><a href="https://github.com/asathoor">Per's Github Repos</a></li>
+                        <li><a href="http://jsfiddle.net/user/petj/fiddles/">Per's JsFiddles</a></li>
                     </ul>
                 </li>
 
@@ -40,6 +43,14 @@
 									<a href="<?php bloginfo('url'); ?>/1md14y1-intro-day-2-xampp/">
 										<span class="glyphicon glyphicon-ice-lolly-tasted" aria-hidden="true"></span> 
 									 	Xampp Intro</a>
+                </li>
+
+
+								<!-- Links -->
+                <li>
+									<a href="<?php bloginfo('url'); ?>/links/">
+										<span class="glyphicon glyphicon-link" aria-hidden="true"></span> 
+									 	Links</a>
                 </li>
 
 

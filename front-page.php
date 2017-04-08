@@ -1,16 +1,19 @@
 <?php
 /**
- * file: index.php
+ * file: front-page.php
  */
 get_header();
 ?>
-<!-- file: index.php -->
+<!-- file: front-page.php -->
 
 <div class="container-fluid">
 
   <div class="row">
 
     <article class="col-sm-12 col-lg-3">
+
+			<?php //echo $f->petj_hello; // php class: property ?>
+			<?php echo $f->petj_hi( 'James Bond'  ); // php class: method ?>
 
 			<!-- new on multimusen -->
 			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
@@ -61,20 +64,19 @@ get_header();
 
     <article class="col-sm-12 col-lg-6">
 
-			<!-- add Bootstrap Carousel -->
-			<?php get_template_part( 'carousel' ); ?>
+			<h3> Carousels Are So Last Year </h3>
+			<?php get_template_part( 'carousel' ); // Bootstrap carousel ?>
 
 		</article>
 
     <article class="col-sm-12 col-lg-3">
 
 			<!-- Feature -->
-			<hr>
-
 			<h3> Selected Articles </h3>
 			<?php petj_display_post( 5347, 'hand-right'); ?>
 			<?php petj_display_post( 5459, 'hand-right' ); // see: functions.php ?>
 			<?php petj_display_post( 4880, 'hand-right'); ?>
+			<?php petj_display_post( 5205, 'hand-right'); // links ?>
 			<hr>
 
 			<!-- search form -->

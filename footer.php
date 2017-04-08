@@ -1,9 +1,14 @@
 <!-- file: footer.php -->
 <footer class="footer aligncenter">
-	<hr>
-	<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.
-</footer>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">
+		<img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.<br>
 
+		WP Theme &copy; 
+			<a href="https://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a> <?php echo date("Y"); ?> 
+			<a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/fra_nultimusen.dk">"Bootstrap-F16-Skeleton"</a> by Per Thykjaer Jensen<br>
+		Based on <a href="http://getbootstrap.com/">Twitter's Bootstrap</a>.
+		Powered by <a href="http://www.wordpress.org/">WordPress</a>!
+</footer>
 
 	<!-- add your scripts here -->
 
@@ -23,27 +28,6 @@
 					$('select.form-control').removeClass('form-control').css('width', '100%')
 				}
 			})
-
-
-			/**
-			 * Hover Menu
-			 * ( mobile friendly? )
-			 */
- 
-		  // hide the children 
-		  //$('.sub-menu').toggle(); 
-
-		  // Based on @url: http://callmenick.com/post/slide-down-menu-with-jquery-and-css 
-			/*
-		  $( '.menu-item-has-children' ).hover( 
-		          function(){ 
-		              $(this).children('.sub-menu').toggle(500); 
-		          }, 
-		          function(){ 
-		              $(this).children('.sub-menu').slideUp(500); 
-		          } 
-		      ); 
-				*/
 
 		} )( jQuery ); // jquery end 
 		/* ]]> */ 
