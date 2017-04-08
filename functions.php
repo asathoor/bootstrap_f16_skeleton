@@ -264,13 +264,19 @@ remove_action('wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 remove_action('wp_head', 'wp_shortlink_wp_head', 10, 0 );
 
 /**
- * Class sample
+ * PHP Class sample (OOP)
  */
 class Myclass  
 {  
- public $petj_hello = "Hello World!";  
+	// property
+	public $petj_hello = "Hello World!";
+
+	// method ( = function)
+	public function petj_hi( $name ){
+		echo "Hi " . $name;
+	}
 }  
-$f = new MyClass;  
+$f = new MyClass; // instantiate 
 //echo $f->petj_hello;  
 
 ?>
