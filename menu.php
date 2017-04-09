@@ -68,6 +68,14 @@
 										 Contact</a>
                 </li>
 
+								<!-- Search -->
+                <li>
+									<a href="<?php bloginfo('url'); ?>/search/">
+										<span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
+										 Search</a>
+                </li>
+
+
 
             </ul><!-- ends nav -->
         </div>
