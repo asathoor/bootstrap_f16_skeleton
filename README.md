@@ -3,6 +3,11 @@
 This theme is a WordPress theme crash course. It's a skeleton for something, where you can develop your own design. 
 Bootstrap is used as a rapid development boiler plate. Since Bootstrap depends on Jquery, the theme is ready for that too.
 
+This repo has two important branches:
+
+1. The skeleton - Master: the present repo.
+2. The implementatioon - [Multimusen](https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen) - a sample used for the theme on [Multimusen.dk](http://www.multimusen.dk).
+
 
 ## The Loop
 
