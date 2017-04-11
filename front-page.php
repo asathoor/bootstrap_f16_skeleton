@@ -13,7 +13,7 @@ get_header();
     <article class="col-sm-12 col-lg-3">
 
 			<?php //echo $f->petj_hello; // php class: property ?>
-			<?php echo $f->petj_hi( 'James Bond'  ); // php class: method ?>
+			<?php //echo $f->petj_hi( 'James Bond'  ); // php class: method ?>
 
 			<!-- new on multimusen -->
 			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
@@ -64,7 +64,7 @@ get_header();
 
     <article class="col-sm-12 col-lg-6">
 
-			<h3> Carousels Are So Last Year </h3>
+			<h3> Are Carousels Still Cool? </h3>
 			<?php get_template_part( 'carousel' ); // Bootstrap carousel ?>
 
 		</article>
