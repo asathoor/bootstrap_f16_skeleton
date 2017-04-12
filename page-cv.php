@@ -18,7 +18,7 @@ get_header();
 			<!-- loop end -->
     </main>
 
-    <aside class="col-sm-12 col-sm-3">
+    <aside class="col-sm-12 col-lg-3">
 			&nbsp;
     </aside>
 
