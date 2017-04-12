@@ -67,34 +67,7 @@ No SEO is used. Add meta-tags, see my [SEO II Exercise](https://github.com/asath
 
 ## The Menu
 
-On the server the menu script looks like this:
-
-```
-	<!-- Jquery menu sample --> 
-	<script> 
-		/* <![CDATA[ */ 
-		( function( $ ) { 
-		  // code goes here 
-		  // console.log('Jquery is up and running.'); 
-		  // hide the children 
-		  $('.sub-menu').toggle(); 
-
-		  // Based on @url: http://callmenick.com/post/slide-down-menu-with-jquery-and-css 
-		  $( '.menu-item' ).hover( 
-		          function(){ 
-		              $(this).children('.sub-menu').slideDown(500); 
-		          }, 
-		          function(){ 
-		              $(this).children('.sub-menu').slideUp(500); 
-		          } 
-		      ); 
-		} )( jQuery ); // jquery end 
-		/* ]]> */ 
-	</script> 
-```
-
-It seems that the classes depend on the menu settings. They are not 
-the same on my localhost and on the server.
+On this branch the menu is a hardcoded Bootstrap menu. The code was more or less made via the [Bootstrap Menu Builder](http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/).
 
 ## Further Development
 
