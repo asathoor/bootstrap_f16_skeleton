@@ -1,5 +1,5 @@
 <!-- Hardcoded bootstrap menu, @url: http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/## -->
-<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+<nav id="custom-bootstrap-menu" class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header"><a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span>
@@ -80,4 +80,4 @@
             </ul><!-- ends nav -->
         </div>
     </div>
-</div><!-- ends bootstrap menu -->
+</nav><!-- ends bootstrap menu -->
