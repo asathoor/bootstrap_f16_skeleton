@@ -1,5 +1,5 @@
 <!-- Hardcoded bootstrap menu, @url: http://bootstrapdesigntools.com/tools/bootstrap-menu-builder/## -->
-<div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+<nav id="custom-bootstrap-menu" class="navbar navbar-inverse" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header"><a class="navbar-brand" href="#"><?php bloginfo('name'); ?></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder"><span class="sr-only">Toggle navigation</span>
@@ -19,12 +19,15 @@
                 </li>
 
 
-								<!-- MMD Classes -->
+								<!-- EAAA -->
                 <li class="dropdown"><a href="/products" class="dropdown-toggle" data-toggle="dropdown">
 										<span class="glyphicon glyphicon-education" aria-hidden="true"></span> 
-										Multimedia Designer Classes <b class="caret"></b></a>
+										EAAA / BAAA <b class="caret"></b></a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="/category/MMD2/">MMD2</a></li>
+                        <li><a href="http://paste.ubuntu.com/">Ubuntu Pastebin</a></li>
+                        <li><a href="https://github.com/asathoor">Per's Github Repos</a></li>
+                        <li><a href="http://jsfiddle.net/user/petj/fiddles/">Per's JsFiddles</a></li>
                     </ul>
                 </li>
 
@@ -65,8 +68,16 @@
 										 Contact</a>
                 </li>
 
+								<!-- Search -->
+                <li>
+									<a href="<?php bloginfo('url'); ?>/search/">
+										<span class="glyphicon glyphicon-search" aria-hidden="true"></span> 
+										 Search</a>
+                </li>
+
+
 
             </ul><!-- ends nav -->
         </div>
     </div>
-</div><!-- ends bootstrap menu -->
+</nav><!-- ends bootstrap menu -->

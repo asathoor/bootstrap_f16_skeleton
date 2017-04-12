@@ -36,8 +36,9 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	margin-right: 1.1em;
 }
 
-/* === 2. menu === */
+/* === 2. menus === */
 
+/* header menu */
 #menu-hovedmenu {
 	list-style-type: none;
 	display: block;
@@ -54,6 +55,36 @@ Use it to make something cool, have fun, and share what you've learned with othe
 	color: #fff;
 	text-decoration:none; 
 }
+
+/* sidebar menu */
+
+
+/* remove bullets */
+#menu-menu-the ul {
+  list-style-type: none;
+}
+
+.menu {
+	list-style-type: none;
+}
+
+/* sidebar sub-menus */
+.menu ul li a {
+	display: block;
+	width: 100%;
+	margin-top: .2em;
+}
+
+.menu li a:hover {
+  background-color: orange;
+	color: #fff;
+}
+
+.menu-item ul li a {
+	color: orange;
+	font-weight: bolder;
+}
+
 
 /* the Bootstrap menu */
 
@@ -253,6 +284,19 @@ background: linear-gradient(to bottom,  #ffaf4b 0%,#ff920a 100%); /* W3C, IE10+,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
 }
 
+
+/* 8. Blogroll (link collection) */
+.blogroll {
+	list-style-type: none;
+	display: block;
+	padding-left: 0;
+	}
+
+.blogroll li:nth-child(even) {
+	background: #d9e5f7;
+	}
+
+
 /* X. Other stuff */
 
 /* search form */
@@ -270,3 +314,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', end
 .hejVerdenText {
 	margin-bottom: 1.3em;
 }
+
+/**
+ * Fonts
+ **/
+body {
+  font-size: large;
+}
+
+footer {
+  font-size: small;
+}
+
