@@ -12,10 +12,18 @@ get_header();
 
     <article class="col-sm-12 col-lg-3">
 
-			<?php //echo $f->petj_hello; // php class: property ?>
-			<?php //echo $f->petj_hi( 'James Bond'  ); // php class: method ?>
 
-			<!-- new on multimusen -->
+			<!-- left widget area -->
+				<?php if ( is_active_sidebar( 'index_widget_1' ) ) : ?>
+					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+						<?php dynamic_sidebar( 'index_widget_1' ); ?>
+					</div><!-- #primary-sidebar -->
+				<?php endif; ?>
+				<!-- end widget area -->
+
+				</hr>
+
+		<!-- new on multimusen -->
 			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
 
 			<ul id="newOnMultimusen">
@@ -58,6 +66,8 @@ get_header();
 				Editor: Per Thykjaer Jensen</p>
 				
 				<hr>
+
+
 
 
 	</article>

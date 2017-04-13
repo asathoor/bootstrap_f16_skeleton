@@ -14,6 +14,16 @@ get_header();
     <div class="col-sm-3">
 			<!-- search form -->
 	    <?php get_search_form( ); ?>
+
+	<!-- left widget area -->
+	<?php if ( is_active_sidebar( 'index_widget_1' ) ) : ?>
+		<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+			<?php dynamic_sidebar( 'index_widget_1' ); ?>
+		</div><!-- #primary-sidebar -->
+	<?php endif; ?>
+	<!-- end widget area -->
+
+
   	</div>
 
     <main class="col-sm-6">

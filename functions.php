@@ -76,6 +76,16 @@ function petjmvp_widgets_init() {
 		'after_title'   => '</h3>',
 	) );
 
+	register_sidebar( array(
+		'name'          => 'Index widget area',
+		'id'            => 'index_widget_1',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h3>',
+		'after_title'   => '</h3>',
+	) );
+
+
 }
 add_action( 'widgets_init', 'petjmvp_widgets_init' );
 
