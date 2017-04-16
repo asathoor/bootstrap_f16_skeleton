@@ -8,7 +8,7 @@
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
  
- 	<div class="post-cat-three">
+ 	<div class="post">
 
  	<!-- Display the Title as a link to the Post's permalink. -->
 
