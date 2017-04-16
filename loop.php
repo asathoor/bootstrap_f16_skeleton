@@ -7,16 +7,7 @@
 <!-- Start the Loop. @url: https://codex.wordpress.org/The_Loop -->
  <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
- 	<!-- Test if the current post is in category 3. -->
- 	<!-- If it is, the div box is given the CSS class "post-cat-three". -->
- 	<!-- Otherwise, the div box is given the CSS class "post". -->
-
- 	<?php if ( in_category( '3' ) ) : ?>
- 		<div class="post-cat-three">
- 	<?php else : ?>
  		<div class="post">
- 	<?php endif; ?>
-
 
  	<!-- Display the Title as a link to the Post's permalink. -->
 
