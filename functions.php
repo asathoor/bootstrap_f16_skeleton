@@ -21,6 +21,10 @@ function themeslug_enqueue_style() {
 
 	// bootstrap carousel
 	wp_enqueue_style( 'bootstrap-carousel', get_template_directory_uri() . '/partials/carousel.css', false );
+
+	// google analytics script
+	wp_enqueue_script( 'script-name', get_template_directory_uri() . '/js/petjGanalytics.js', true );
+
 }
 add_action( 'wp_enqueue_scripts', 'themeslug_enqueue_style' );
 
