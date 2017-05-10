@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Bootstrap theme</title>
+		<title><?php bloginfo('name'); ?></title>
 
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
