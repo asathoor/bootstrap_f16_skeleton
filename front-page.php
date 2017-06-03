@@ -9,10 +9,7 @@
 <html>
 
 	<head>
-	
-		<!-- Jquery enable -->
-		<?php wp_enqueue_script("jquery"); ?>
-		
+			
 		<?php wp_head(); ?>
 		
 		<!-- Behavioral Meta Data -->
@@ -33,6 +30,19 @@
 
 		<body>
 		
+			<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
+			<header class="jumbotron">
+			<a href="/">
+				<img src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
+						alt="speaker" 
+						id="logoImage">
+		
+				<h1><?php bloginfo('name'); ?></h1>
+			</a>	
+			</header>
+
+		
+			<!-- Wagerfield's parallax -->
 			<div id="container" class="container">
 				<div id="scene" class="scene">
 					<div class="layer" data-depth="1.00"><img src="<?php bloginfo('template_directory'); ?>/images/layer1.png"></div>
@@ -43,6 +53,15 @@
 					<div class="layer" data-depth="0.00"><img src="<?php bloginfo('template_directory'); ?>/images/layer6.png"></div>
 				</div>
 			</div>
+			
+			<footer class="footer">
+			   <div class="container">
+			     <span class="text-muted">&copy; Multimusen.dk</span>
+			   </div>
+    		</footer>
+
+			<!-- Jquery -->
+			<?php wp_enqueue_script("jquery"); ?>
 
 			<!-- Scripts: Wagerfield's Parallax -->
 			<script src="<?php bloginfo('template_directory'); ?>/bower_components/parallax/deploy/parallax.js"></script>

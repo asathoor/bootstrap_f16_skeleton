@@ -16,6 +16,11 @@ if ( ! isset( $content_width ) ) $content_width = 300;
  */
 function themeslug_enqueue_style() {
 
+	// bootstrap
+	wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/bower_components/bootstrap/dist/js/bootstrap.min.js', '' , '1.0', true );	
+	wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/bower_components/bootstrap/dist/css/bootstrap.min.css', false );
+	wp_enqueue_style( 'bootstrap-css-ui', get_template_directory_uri() . '/bower_components/bootstrap/dist/css/bootstrap.theme.min.css', false );
+
 	// style.css
 	wp_enqueue_style( 'core', get_template_directory_uri() . '/style.css', false );
 
