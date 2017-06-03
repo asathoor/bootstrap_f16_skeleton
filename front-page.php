@@ -22,7 +22,7 @@
 			<div id="container" class="container">
 				<div id="scene" class="scene">
 					<div class="layer" data-depth="0.09"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer05.png"></div>
-					<div class="layer" data-depth="0.80"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer02.png"></div>
+					<!--div class="layer" data-depth="0.80"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer02.png"></div -->
 					<div class="layer" data-depth="0.60"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer03.png"></div>
 					<div class="layer" data-depth="0.40"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer04.png"></div>
 					<div class="layer" data-depth="0.10"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer02.png"></div>
@@ -36,24 +36,17 @@
 	
 				<!-- about section -->		  
 				<article class="col-sm-12 col-lg-4">
-					<h1 class="display-1 text-uppercase">Multimusen.dk</h1>
+					<h1 class="h1 display-1 text-uppercase">Multimusen.dk</h1>
 					
-					<p class="lead">Wicked multimedia experiments and tutorials.</p>			
+					<p class="lead">Wicked multimedia experiments and tutorials</p>			
 				</article>
 
-				<!-- search form -->
-				<article class="col-sm-12 col-lg-4">
-					<!-- avatar -->	
-					<p><?php echo get_avatar(1,66); ?><br>
-					By: Per Thykjaer Jensen</p>
-					<p class="small">Multimusen is <a href="https://wordpress.org/">powered by WordPress!</a> <br> 
-					Theme: <a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">Bootstrap-F16-Skeleton</a>.</p>
-				</article>
+
 		
 					<!-- new on multimusen -->	    
 				    <article class="col-sm-12 col-lg-4">
 			
-						<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
+						<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New Articles</h3>
 			
 						<ul id="newOnMultimusen">
 						<?php
@@ -80,6 +73,19 @@
 						</ul>
 					
 					</article>
+
+				<article class="col-sm-12 col-lg-4">
+					<!-- avatar -->	
+					<p><?php echo get_avatar(1,66); ?></p>
+					<p class="font-weight-bold">By: Per Thykjaer Jensen</p>
+					<p class="small">Multimusen is <a href="https://wordpress.org/">powered by WordPress!</a> <br> 
+					Theme: <a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">Bootstrap-F16-Skeleton</a>.<br>
+					&copy; <a href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Non Commercial License</a>.
+					
+					</p>
+				</article>
+
+
 										
 				</div><!-- /row -->
 			</div><!-- /container-fluid -->

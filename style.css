@@ -314,34 +314,6 @@ footer {
 	margin-bottom: 1.3em;
 }
 
-/* Responsive Fonts  */
-@media screen and ( -webkit-device-pixel-ratio:3 ) {
-    body {font-size: 250%}
-}	
-
-@media all and (max-width: 1200px) { /* screen size until 1200px */
-    body {
-        font-size: 1.5em; /* 1.5x default size */
-    }
-}
-@media all and (max-width: 1000px) { /* screen size until 1000px */
-    body {
-        font-size: 1.2em; /* 1.2x default size */
-        }
-    }
-@media all and (max-width: 500px) { /* screen size until 500px */
-    body {
-        font-size: 0.8em; /* 0.8x default size */
-        }
-    }
-    
-@media all and (min-width: 1800px) { /* screen size until 500px */
-    body {
-        font-size: 4em; /* larger */
-        }
-    }
-
-
 /**
  * Frontpage.php styles
  **/
@@ -357,3 +329,25 @@ footer {
     border-radius: 50%;
 }
 
+/* Responsive */
+html {
+  font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 28px;
+  }
+}
