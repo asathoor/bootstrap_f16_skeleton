@@ -8,20 +8,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<?php wp_head(); ?>
-				
+	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="HandheldFriendly" content="true">
+
 		<style>
-			#container {
-				position: relative;
-				width: 640px;
-				margin-left: auto;
-				margin-right: auto;			
-			}
-			
-			.avatar {
-			    border-radius: 50%;
-			}	
+			/* Gradient */
+			body {
+					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7c00+11,ffa73d+25,ffa73d+25,ffa73d+71,ff7f04+89 */
+					background: #ff7c00; /* Old browsers */
+					background: -moz-linear-gradient(left,  #ff7c00 11%, #ffa73d 25%, #ffa73d 25%, #ffa73d 71%, #ff7f04 89%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(left,  #ff7c00 11%,#ffa73d 25%,#ffa73d 25%,#ffa73d 71%,#ff7f04 89%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to right,  #ff7c00 11%,#ffa73d 25%,#ffa73d 25%,#ffa73d 71%,#ff7f04 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7c00', endColorstr='#ff7f04',GradientType=1 ); /* IE6-9 */
+
+				}
+		
 		</style>
+
+		
+		<?php wp_head(); ?>
 		
 	</head>
 
@@ -45,8 +51,8 @@
 	
 				<!-- about section -->		  
 				<article class="col-sm-12 col-lg-4">
-					<h1>Multimusen.dk</h1>
-					<p>Wicked multimedia experiments and tutorials.</p>
+					<h1 class="display-1 text-uppercase">Multimusen.dk</h1>
+					<p class="lead">Wicked multimedia experiments and tutorials.</p>
 					
 				</article>
 
@@ -55,8 +61,8 @@
 					<!-- avatar -->	
 					<p><?php echo get_avatar(1,66); ?><br>
 					By: Per Thykjaer Jensen</p>
-					<blockquote class="small">Multimusen is <a href="https://wordpress.org/">powered by WordPress!</a> <br> 
-					Theme: <a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">Bootstrap-F16-Skeleton</a>.</blockquote>
+					<p class="small">Multimusen is <a href="https://wordpress.org/">powered by WordPress!</a> <br> 
+					Theme: <a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">Bootstrap-F16-Skeleton</a>.</p>
 				</article>
 		
 					<!-- new on multimusen -->	    
