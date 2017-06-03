@@ -1,101 +1,58 @@
 <?php
 /**
- * file: front-page.php
- */
-get_header();
+ * file: front-page.php 
+ * purpose: costum front page
+ **/
 ?>
-<!-- file: front-page.php -->
 
-<div class="container-fluid">
+<!DOCTYPE html>
+<html>
 
-  <div class="row">
-
-    <article class="col-sm-12 col-lg-3">
-
-
-			<!-- left widget area -->
-				<?php if ( is_active_sidebar( 'index_widget_1' ) ) : ?>
-					<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
-						<?php dynamic_sidebar( 'index_widget_1' ); ?>
-					</div><!-- #primary-sidebar -->
-				<?php endif; ?>
-				<!-- end widget area -->
-
-				</hr>
-
-		<!-- new on multimusen -->
-			<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New on Multimusen!</h3>
-
-			<ul id="newOnMultimusen">
-			<?php
-				$args = array( 'numberposts' => '5', 'tax_query' => array(
-						array(
-							'taxonomy' => 'post_format',
-							'field' => 'slug',
-							'terms' => 'post-format-aside',
-							'operator' => 'NOT IN'
-						), 
-						array(
-							'taxonomy' => 'post_format',
-							'field' => 'slug',
-							'terms' => 'post-format-image',
-			 				'operator' => 'NOT IN'
-						)
-				) );
-				$recent_posts = wp_get_recent_posts( $args );
-				foreach( $recent_posts as $recent ){
-					echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a> </li> ';
-				}
-				wp_reset_query();
-			?>
-			</ul>
-
-			<hr>
-
-
-		<!-- site description -->
-			<?php hej_verden( 
-				get_bloginfo('name'),
-				get_bloginfo('description')
-			); // see: functions.php ?>
-
-
-		<!-- avatar -->
-
-				<p><?php echo get_avatar(1,66); ?><br>
-				Editor: Per Thykjaer Jensen</p>
-				
-				<hr>
-
-
-
-
-	</article>
-
-    <article class="col-sm-12 col-lg-6">
-
-			<h3> Are Carousels Still Cool? </h3>
-			<?php get_template_part( 'carousel' ); // Bootstrap carousel ?>
-
-		</article>
-
-    <article class="col-sm-12 col-lg-3">
-
-			<!-- Feature -->
-			<h3> Selected Articles </h3>
-			<?php petj_display_post( 5347, 'hand-right'); ?>
-			<?php petj_display_post( 5459, 'hand-right' ); // see: functions.php ?>
-			<?php petj_display_post( 4880, 'hand-right'); ?>
-			<?php petj_display_post( 5205, 'hand-right'); // links ?>
-			<hr>
-
-			<!-- search form -->
-			<?php //get_search_form( ); ?>
+	<head>
+	
+		<!-- Jquery enable -->
+		<?php wp_enqueue_script("jquery"); ?>
 		
-		</article>
+		<?php wp_head(); ?>
+		
+		<!-- Behavioral Meta Data -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		
+		<style>
+			#container {
+				position: relative;
+				width: 640px;
+				margin-left: auto;
+				margin-right: auto;			
+			}		
+		</style>
+		
+		
+	</head>
 
-	</div><!-- row -->
+		<body>
+		
+			<div id="container" class="container">
+				<div id="scene" class="scene">
+					<div class="layer" data-depth="1.00"><img src="<?php bloginfo('template_directory'); ?>/images/layer1.png"></div>
+					<div class="layer" data-depth="0.80"><img src="<?php bloginfo('template_directory'); ?>/images/layer2.png"></div>
+					<div class="layer" data-depth="0.60"><img src="<?php bloginfo('template_directory'); ?>/images/layer3.png"></div>
+					<div class="layer" data-depth="0.40"><img src="<?php bloginfo('template_directory'); ?>/images/layer4.png"></div>
+					<div class="layer" data-depth="0.20"><img src="<?php bloginfo('template_directory'); ?>/images/layer5.png"></div>
+					<div class="layer" data-depth="0.00"><img src="<?php bloginfo('template_directory'); ?>/images/layer6.png"></div>
+				</div>
+			</div>
 
-</div><!-- .container -->
+			<!-- Scripts: Wagerfield's Parallax -->
+			<script src="<?php bloginfo('template_directory'); ?>/bower_components/parallax/deploy/parallax.js"></script>
+		
+			<script>	
+				// Pretty simple huh?
+				var scene = document.getElementById('scene');
+				var parallax = new Parallax(scene);	
+			</script>
 
-<?php get_footer(); ?>
+			<?php wp_footer(); ?>		
+		</body>
+</html>

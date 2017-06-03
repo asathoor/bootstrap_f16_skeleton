@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap_f16_skeleton",
+  "homepage": "https://github.com/asathoor/bootstrap_f16_skeleton",
+  "authors": [
+    "Per Thykjaer Jensen"
+  ],
+  "description": "Design for multimusen.dk",
+  "main": "",
+  "keywords": [
+    "multimedia",
+    "design"
+  ],
+  "license": "gpl-v3",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "parallax": "^2.1.3"
+  }
+}
