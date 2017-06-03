@@ -30,7 +30,7 @@
 			<!-- Wagerfield's parallax layers -->
 			<div id="container" class="container">
 				<div id="scene" class="scene">
-					<div class="layer" data-depth="1.00"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer05.png"></div>
+					<div class="layer" data-depth="0.09"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer05.png"></div>
 					<div class="layer" data-depth="0.80"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer02.png"></div>
 					<div class="layer" data-depth="0.60"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer03.png"></div>
 					<div class="layer" data-depth="0.40"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer04.png"></div>
@@ -105,6 +105,12 @@
 				var parallax = new Parallax(scene);	
 			</script>
 
-			<?php wp_footer(); ?>		
+			<!-- Google Analytics -->
+			<script src="<?php bloginfo('template_directory'); ?>/js/petjGanalytics.js"></script>
+
+
+			<?php wp_footer(); ?>
+			
+			
 		</body>
 </html>
