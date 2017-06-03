@@ -11,21 +11,6 @@
 	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="HandheldFriendly" content="true">
-
-		<style>
-			/* Gradient */
-			body {
-					/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff7c00+11,ffa73d+25,ffa73d+25,ffa73d+71,ff7f04+89 */
-					background: #ff7c00; /* Old browsers */
-					background: -moz-linear-gradient(left,  #ff7c00 11%, #ffa73d 25%, #ffa73d 25%, #ffa73d 71%, #ff7f04 89%); /* FF3.6-15 */
-					background: -webkit-linear-gradient(left,  #ff7c00 11%,#ffa73d 25%,#ffa73d 25%,#ffa73d 71%,#ff7f04 89%); /* Chrome10-25,Safari5.1-6 */
-					background: linear-gradient(to right,  #ff7c00 11%,#ffa73d 25%,#ffa73d 25%,#ffa73d 71%,#ff7f04 89%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7c00', endColorstr='#ff7f04',GradientType=1 ); /* IE6-9 */
-
-				}
-		
-		</style>
-
 		
 		<?php wp_head(); ?>
 		
@@ -52,8 +37,8 @@
 				<!-- about section -->		  
 				<article class="col-sm-12 col-lg-4">
 					<h1 class="display-1 text-uppercase">Multimusen.dk</h1>
-					<p class="lead">Wicked multimedia experiments and tutorials.</p>
 					
+					<p class="lead">Wicked multimedia experiments and tutorials.</p>			
 				</article>
 
 				<!-- search form -->
