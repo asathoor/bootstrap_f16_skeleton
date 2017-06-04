@@ -52,7 +52,9 @@
 				<article class="col-sm-12 col-lg-4">
 					<h1 class="h1 display-1 text-uppercase">Multimusen.dk</h1>
 					
-					<p class="lead">Wicked multimedia experiments and tutorials</p>			
+					<p class="lead">Wicked multimedia experiments and tutorials</p>
+										
+						
 				</article>
 
 
@@ -60,7 +62,7 @@
 					<!-- new on multimusen -->	    
 				    <article class="col-sm-12 col-lg-4">
 			
-						<h3 class=""><!--span class="glyphicon glyphicon-star list-group-item-heading" aria-hidden="true"></span --> New Articles</h3>
+						<h3 class=""><!--span class="glyphicon glyphicon-star list-group-item-heading" aria-hidden="true"></span --> New Multimedia Articles</h3>
 			
 						<ul id="newOnMultimusen" class="">
 						<?php
@@ -84,7 +86,11 @@
 							}
 							wp_reset_query();
 						?>
-							<li class=""><a href="/search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>
+							
+						</ul>
+						
+						<ul>
+							<li class=""><a href="/search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>					
 						</ul>
 						
 					
@@ -93,10 +99,10 @@
 				<article class="col-sm-12 col-lg-4">
 					<!-- avatar -->	
 					<p><?php echo get_avatar(1,66); ?></p>
-					<p class="font-weight-bold">By: <a href="/about">Per Thykjaer Jensen</a></p>
+					<p class="lead">By: <a href="/about">Per Thykjaer Jensen</a></p>
 					<p class="small">Multimusen is <a href="https://wordpress.org/">powered by WordPress!</a> <br> 
-					Theme: <a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">Bootstrap-F16-Skeleton</a>.<br>
-					&copy; <a href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Non Commercial License</a>.
+					Theme: <a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">Bootstrap-F16-Skeleton</a>. Licence: GPLv3. <br>
+					Content: &copy; <a href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Non Commercial License</a>.
 					
 					</p>
 				</article>
