@@ -17,6 +17,9 @@
 	</head>
 
 		<body>
+
+			<!-- content -->
+			<div class="container-fluid">			
 					
 			<!-- Wagerfield's parallax layers -->
 			<div id="container" class="container">
@@ -30,9 +33,7 @@
 				</div>
 			</div>
 
-			<!-- content -->
-			<div class="container-fluid">
-			  <div class="row">
+			<div class="row">
 	
 				<!-- about section -->		  
 				<article class="col-sm-12 col-lg-4">
