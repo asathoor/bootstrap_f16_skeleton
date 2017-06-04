@@ -218,11 +218,10 @@ article {
 
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 
-.jumbotron a h1 {
+.jumbotron h1 a {
 		font-family: 'Lobster Two', cursive;
-		color: #fff;
+		color: #fff !important;
 }
-
 
 /* 6. YouTube Video
 

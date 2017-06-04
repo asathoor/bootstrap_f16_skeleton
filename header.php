@@ -31,18 +31,19 @@
 	</head>
 	<body <?php body_class(); ?>>
 	
-		<?php get_template_part( "menu" ); ?>
+		<?php // get_template_part( "menu" ); ?>
 	
 		<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
 		<header class="jumbotron">
-			<a href="/">
-				<img 
-							src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
-							alt="speaker" 
-							id="logoImage">
-	
-				<h1><?php bloginfo('name'); ?></h1>
-			</a>
+			<h1 class="h1 display-1 text-uppercase">
+				<a href="/">
+					<img src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
+						alt="speaker" 
+						id="logoImage">
+		
+					<?php bloginfo('name'); ?>
+				</a>
+			</h1>
 		</header>
 	
 		<!-- ends: header.php -->
