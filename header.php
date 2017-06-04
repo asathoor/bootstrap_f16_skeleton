@@ -29,26 +29,20 @@
 		<?php wp_head(); // hook ?>
 
 	</head>
-<body <?php body_class(); ?>>
-
-	<?php get_template_part( "menu" ); ?>
-
-	<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
-	<header class="jumbotron">
-
-		<a href="/">
-			<img 
-						src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
-						alt="speaker" 
-						id="logoImage">
-
-
-		<h1><?php bloginfo('name'); ?></h1>
-
-		</a>
-
-	</header>
-
-
-
-	<!-- ends: header.php -->
+	<body <?php body_class(); ?>>
+	
+		<?php get_template_part( "menu" ); ?>
+	
+		<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
+		<header class="jumbotron">
+			<a href="/">
+				<img 
+							src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
+							alt="speaker" 
+							id="logoImage">
+	
+				<h1><?php bloginfo('name'); ?></h1>
+			</a>
+		</header>
+	
+		<!-- ends: header.php -->
