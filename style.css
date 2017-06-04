@@ -87,7 +87,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 
 /* the Bootstrap menu */
-
 #custom-bootstrap-menu.navbar-default .navbar-brand {
     color: rgba(119, 119, 119, 1);
 }
@@ -130,14 +129,6 @@ Use it to make something cool, have fun, and share what you've learned with othe
 }
 
 /* adjustment: bootstrap menu */
-
-/*
-#custom-bootstrap-menu {
-	position: relative;
-	top: -29px;
-}
-*/
-
 header {
 	position: relative;
 	top: -16px;
@@ -145,7 +136,6 @@ header {
 
 
 header a:hover {
-
 	text-decoration:none;
 }
 
@@ -192,16 +182,16 @@ pre, code {
 }
 
 .screen-reader-text {
-font-style: italic;
+	font-style: italic;
 }
 
 .gallery-caption {
-font-style: italic;
+	font-style: italic;
 }
 
 .bypostauthor {
-font-style: italic;
-  font-weight: bold;
+	font-style: italic;
+  	font-weight: bold;
 }
 
 .alignright {
@@ -232,10 +222,6 @@ article {
 		font-family: 'Lobster Two', cursive;
 		color: #fff;
 }
-
-/* fonts: responsive */
-
-/* Extra small devices (phones, up to 480px) */
 
 
 /* 6. YouTube Video
@@ -329,25 +315,36 @@ footer {
     border-radius: 50%;
 }
 
-/* Responsive */
-html {
-  font-size: 14px;
+/* Mobile fonts */
+
+/* scale problem on sony z */
+@media (max-width: 480px) {
+    .navbar li a{
+    font-size:14px;
+    }
 }
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 16px;
+@media (min-width: 481px) and (max-width: 767px) {
+    .navbar li a{
+    font-size:20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .navbar li a{
+    font-size:26px;
+    }
+}
+
+@media (min-width: 980px) {
+  .navbar li a{
+  font-size:30px;
   }
 }
 
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 20px;
-  }
-}
 
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 28px;
+@media (min-width: 1024px) {
+  .navbar li a{
+  font-size:80px;
   }
 }
