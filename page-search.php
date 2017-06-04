@@ -8,14 +8,14 @@ get_header();
 ?>
 
 <!-- file: search.php -->
-
 <div class="container-fluid">
 
-    <main id="searchForm" class="col-sm-8">
-				<h2> Find it on Multimusen </h2>
-				<?php get_search_form(); ?>
+	<!-- search form -->
+    <main id="searchForm" class="col-sm-8 align-center">
+		<?php get_search_form(); ?>
     </main>
 
+	<!-- sidebar -->
     <aside class="col-sm-4">
 			<?php get_sidebar(); ?>
     </aside>

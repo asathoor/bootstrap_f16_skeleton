@@ -60,9 +60,9 @@
 					<!-- new on multimusen -->	    
 				    <article class="col-sm-12 col-lg-4">
 			
-						<h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span> New Articles</h3>
+						<h3 class=""><!--span class="glyphicon glyphicon-star list-group-item-heading" aria-hidden="true"></span --> New Articles</h3>
 			
-						<ul id="newOnMultimusen">
+						<ul id="newOnMultimusen" class="">
 						<?php
 							$args = array( 'numberposts' => '5', 'tax_query' => array(
 									array(
@@ -80,18 +80,20 @@
 							) );
 							$recent_posts = wp_get_recent_posts( $args );
 							foreach( $recent_posts as $recent ){
-								echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a> </li> ';
+								echo '<li class=""><a href="' . get_permalink($recent["ID"]) . '">' .   ( __($recent["post_title"])).'</a> </li> ';
 							}
 							wp_reset_query();
 						?>
+							<li class=""><a href="/search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>
 						</ul>
+						
 					
 					</article>
 
 				<article class="col-sm-12 col-lg-4">
 					<!-- avatar -->	
 					<p><?php echo get_avatar(1,66); ?></p>
-					<p class="font-weight-bold">By: Per Thykjaer Jensen</p>
+					<p class="font-weight-bold">By: <a href="/about">Per Thykjaer Jensen</a></p>
 					<p class="small">Multimusen is <a href="https://wordpress.org/">powered by WordPress!</a> <br> 
 					Theme: <a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">Bootstrap-F16-Skeleton</a>.<br>
 					&copy; <a href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Non Commercial License</a>.
