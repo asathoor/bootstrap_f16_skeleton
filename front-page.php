@@ -53,7 +53,10 @@
 					<h1 class="h1 display-1 text-uppercase">Multimusen.dk</h1>
 					
 					<p class="lead">Wicked multimedia experiments and tutorials</p>
-										
+
+					<!-- widget area -->
+				    <?php dynamic_sidebar( 'index_widget_1' ); ?>
+				
 						
 				</article>
 
@@ -97,6 +100,7 @@
 					</article>
 
 				<article class="col-sm-12 col-lg-4">
+								
 					<!-- avatar -->	
 					<p><?php echo get_avatar(1,66); ?></p>
 					<p class="lead">By: <a href="/about">Per Thykjaer Jensen</a></p>

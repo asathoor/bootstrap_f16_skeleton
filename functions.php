@@ -71,6 +71,7 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+
 /**
  * Widget area
  */
@@ -97,6 +98,7 @@ function petjmvp_widgets_init() {
 
 }
 add_action( 'widgets_init', 'petjmvp_widgets_init' );
+
 
 /**
  * Costum header
