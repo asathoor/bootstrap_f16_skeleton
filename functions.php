@@ -7,7 +7,7 @@
 /**
  * Set content width (media)
  */
-if ( ! isset( $content_width ) ) $content_width = 300;
+if ( ! isset( $content_width ) ) $content_width = 700;
 
 
 /**

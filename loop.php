@@ -4,45 +4,29 @@
  * See WP loop page, @url https://codex.wordpress.org/The_Loop
  */
 ?>
-<!-- Start the Loop. @url: https://codex.wordpress.org/The_Loop -->
- <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+ <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
  	<div class="post">
 
- 	<!-- Display the Title as a link to the Post's permalink. -->
+	 	<h3>
+	 		<a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+	 			<?php the_title(); ?>
+	 		</a>
+	 	</h3>
 
- 	<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+ 		<div class="date"><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></div>
 
+	 	<div class="entry">
+	 		<?php the_content(); ?>
+	 	</div>
 
- 	<!-- Display the date (November 16th, 2009 format) and a link to other posts by this posts author. -->
+	 	<p class="postmetadata"><?php _e( 'Category: ' ); ?> <?php the_category( ', ' ); ?></p>
 
- 	<small><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></small>
+	 </div> <!-- /.post -->
 
+<?php endwhile; else : ?>
 
- 	<!-- Display the Post's content in a div box. -->
+	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
- 	<div class="entry">
- 		<?php the_content(); ?>
- 	</div>
-
-
- 	<!-- Display a comma separated list of the Post's Categories. -->
-
- 	<p class="postmetadata"><?php _e( 'Posted in' ); ?> <?php the_category( ', ' ); ?></p>
-	<hr>
- 	</div> <!-- closes the first div box -->
-
-
- 	<!-- Stop The Loop (but note the "else:" - see next line). -->
-
- <?php endwhile; else : ?>
-
-
- 	<!-- The very first "if" tested to see if there were any Posts to -->
- 	<!-- display.  This "else" part tells what do if there weren't any. -->
- 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-
-
- 	<!-- REALLY stop The Loop. -->
- <?php endif; ?>
+<?php endif; ?>
