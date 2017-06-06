@@ -228,23 +228,30 @@ function petj_display_post( $postId, $glyph ) {
  */
 function petj_one_mail( $domain, $email ){
 	?>
-	<form method="post" action="http://<?php echo $domain; ?>/cgi-bin/FormMail.pl" 
+				<form method="post" action="http://<?php echo $domain; ?>/cgi-bin/FormMail.pl" 
 	accept-charset="ISO-8859-1" onsubmit="var originalCharset = document.charset; 
 	document.charset = 'ISO-8859-1'; 
 	window.onbeforeunload = function () {document.charset=originalCharset;};">
-	Name
-	<br>
-	<input name="realname">
-	<br>
-	Email
-	<br>
-	<input name="email">
-	<br>
-	Message
-	<br>
-	<textarea cols="20" rows="10" name="Message"></textarea>
-	<br>
-	<input type="submit" value="Send">
+
+	<h3>Contact</h3>
+	
+	<div class="form-group">
+		<label>Name</label><br>
+		<input name="realname">
+	</div>
+	
+	<div class="form-group">
+		<label>Email</label><br>
+		<input name="email">
+	</div>
+	
+	<div class="form-group">
+		<label>Message</label><br>
+		<textarea cols="20" rows="10" name="Message"></textarea>
+	</div>	
+	
+	<input type="submit" value="Send" class="btn btn-primary">
+	
 	<input type="hidden" name="recipient" value="<?php echo $email; ?>">
 	<input type="hidden" name="subject" value="Subject">
 	<input type="hidden" name="redirect" value="http://<?php echo $domain; ?>/thanks/">

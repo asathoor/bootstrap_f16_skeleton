@@ -37,12 +37,11 @@
 			<!-- Wagerfield's parallax layers -->
 			<div id="container" class="container">
 				<div id="scene" class="scene">
-					<div class="layer" data-depth="0.09"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer05.png"></div>
-					<!--div class="layer" data-depth="0.80"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer02.png"></div -->
-					<div class="layer" data-depth="0.60"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer03.png"></div>
-					<div class="layer" data-depth="0.40"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer04.png"></div>
-					<div class="layer" data-depth="0.10"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer02.png"></div>
-					<div class="layer" data-depth="0.40"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer01.png"></div>
+					<div class="layer" data-depth="0.09"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer05.png" alt="layer 05"></div>
+					<div class="layer" data-depth="0.60"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer03.png" alt="layer 03"></div>
+					<div class="layer" data-depth="0.40"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer04.png" alt="layer 04"></div>
+					<div class="layer" data-depth="0.10"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer02.png alt="layer 02"></div>
+					<div class="layer" data-depth="0.40"><img src="<?php bloginfo('template_directory'); ?>/images/multimusen_prlx_layer01.png" alt="layer 01 musen"></div>
 				</div>
 			</div>
 
@@ -92,9 +91,7 @@
 							
 						</ul>
 						
-						<ul>
-							<li class=""><a href="/search"><span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</a></li>					
-						</ul>
+						<?php get_search_form(); ?>
 						
 					
 					</article>

@@ -16,10 +16,9 @@ get_header();
 			); // see: functions.php ?>
 
 			<!-- avatar -->
-			<p><?php echo get_avatar(1,66); ?><br>
-			Editor: Per Thykjaer Jensen</p>
-				
-			<hr>			
+			<?php echo get_avatar(1,66); ?>
+			<p>Per Thykjaer Jensen</p>
+						
 		</aside>
 
     <main class="col-sm-12 col-lg-6">
@@ -29,10 +28,7 @@ get_header();
     </main>
 
     <aside class="col-sm-12 col-sm-3">
-			<?php petj_display_post( 1263, 'hand-right'); // CV ?>
-			<?php petj_display_post( 5347, 'hand-right'); // Dannebrog ?>
-			<?php petj_display_post( 4853, 'hand-right'); // Comp. CMS art. ?>
-			</hr>
+		<?php petj_one_mail( $domain, $email ); ?>
     </aside>
 
   </div><!-- row -->
