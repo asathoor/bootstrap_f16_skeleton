@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><?php bloginfo('name'); ?></title>
+		<!-- don't add a title tag -->
 
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
