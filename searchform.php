@@ -1,3 +1,9 @@
+<?php
+/**
+ * file: searchform.php
+ * purpose: alternative to the native search form in WP.
+ **/
+?>
 <!-- file: searchform.php -->
  
 <!-- Costum Bootstrap form -->
@@ -6,10 +12,8 @@
 <div class="input-group" id="searchForm">
 	<form action="/" method="get">		
 	 	<div class="input-group">
-	      <input type="text" name="s" class="form-control" placeholder="Search for...">
-	      <span class="input-group-btn">
-	        <button class="btn btn-secondary" type="submit">Ok</button>
-	      </span>
+	      <input type="text" name="s" class="form-label" placeholder="Search for...">      
+	      <button class="btn btn-default" type="submit">Search</button>
 	    </div>	    
 	</form>
 </div>
