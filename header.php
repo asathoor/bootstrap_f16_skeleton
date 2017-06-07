@@ -33,7 +33,7 @@
 	
 		<!-- markup inspired by @url: https://www.w3schools.com/bootstrap/ -->
 		<header class="jumbotron">
-			<h1 class="h1 display-1 text-uppercase">
+			<h1>
 				<a href="/">
 					<img src="<?php bloginfo('template_directory'); ?>/images/multimusen.png" 
 						alt="speaker" 

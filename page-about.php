@@ -9,16 +9,7 @@ get_header();
 <div class="container-fluid">
 
 		<aside class="col-sm-12 col-lg-3">
-		<!-- site description -->
-			<?php hej_verden( 
-				get_bloginfo('name'),
-				get_bloginfo('description')
-			); // see: functions.php ?>
-
-			<!-- avatar -->
-			<?php echo get_avatar(1,66); ?>
-			<p>Per Thykjaer Jensen</p>
-						
+			&nbsp;						
 		</aside>
 
     <main class="col-sm-12 col-lg-6">

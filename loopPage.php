@@ -10,11 +10,10 @@
  	<div class="post">
 		<h3><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
 
-		<div id="date"><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></div>
-	
-	
+		<div class="date"><?php the_time('F jS, Y'); ?> by <?php the_author_posts_link(); ?></div>
+		
 	 	<div class="entry">
-	 		<?php // the_content(); ?>
+	 		<?php the_content(); ?>
 	 	</div>
 
  	</div> <!-- closes the first div box -->
