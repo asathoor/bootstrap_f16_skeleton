@@ -5,7 +5,7 @@
 
 		WP Theme &copy; 
 			<a href="https://www.gnu.org/licenses/gpl-3.0.txt">GPLv3</a> <?php echo date("Y"); ?> 
-			<a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/fra_nultimusen.dk">"Bootstrap-F16-Skeleton"</a> by Per Thykjaer Jensen<br>
+			<a href="https://github.com/asathoor/bootstrap_f16_skeleton/tree/multimusen">"Bootstrap-F16-Skeleton"</a> by Per Thykjaer Jensen<br>
 		Based on <a href="http://getbootstrap.com/">Twitter's Bootstrap</a>.
 		Powered by <a href="http://www.wordpress.org/">WordPress</a>!
 </footer>
