@@ -219,7 +219,7 @@ article {
 @import url('https://fonts.googleapis.com/css?family=Lobster+Two');
 
 .jumbotron h1 a {
-		font-family: 'Lobster Two', cursive;
+		font-family: 'Lobster Two', Arial, Helvetica, sans-serif;
 		color: #fff !important;
 }
 
@@ -313,39 +313,3 @@ footer {
 .avatar {
     border-radius: 50%;
 }
-
-/* Mobile fonts */
-
-/* scale problem on sony z */
-/*
-@media (max-width: 480px) {
-    .navbar li a{
-    font-size:14px;
-    }
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-    .navbar li a{
-    font-size:20px;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-    .navbar li a{
-    font-size:26px;
-    }
-}
-
-@media (min-width: 980px) {
-  .navbar li a{
-  font-size:30px;
-  }
-}
-
-
-@media (min-width: 1024px) {
-  .navbar li a{
-  font-size:40px;
-  }
-}
-*/
