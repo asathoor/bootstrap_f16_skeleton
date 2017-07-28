@@ -23,6 +23,10 @@
 
 		<!-- Latest compiled and minified JavaScript -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+		<!-- open graph Facebook app id -->
+		<!-- see: log on your FB developer account, create an app, use the number ... -->
+		<meta property="fb:app_id" content="1907588896143956">
 		
 		<?php wp_head(); // hook ?>
 
